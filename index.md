@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: ThinkGarden's Blog
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
