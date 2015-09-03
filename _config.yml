@@ -7,7 +7,7 @@ permalink: pretty
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 
-title : slowfish
+title : 慢鱼
 tagline: ''
 description:      '若你喜欢怪人，其实我很美'
 author :
