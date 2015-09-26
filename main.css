@@ -71,17 +71,22 @@ a{
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .post .post-info{
 	width: 60%;
-    padding: 45px 30px;
+	height: 100%;
+	position: relative;
+	color:#fff;
+    padding: 25px 30px;
     background: -webkit-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
     background: -moz-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
     background: -ms-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
     background: linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
     display: inline-block;
     letter-spacing: normal;
+    box-sizing:boder-box;
 }
 .post-info p {
     margin-bottom: 30px;
@@ -89,8 +94,13 @@ a{
     line-height: 22px;
 }
 
+.post-info p.date{
+	position: absolute;
+	bottom: 8px;
+}
+
 .post .post-info a{
-	color: #000;
+	color: #fff;
 }
 
 .post .post-info a:hover{
