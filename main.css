@@ -24,6 +24,12 @@ img {
 a{
 	text-decoration: none;
 }
+.f14{
+	font-size: 14px;
+}
+.f22{
+	font-size: 22px;
+}
 
 .container{
 	width: 960px;
@@ -59,55 +65,28 @@ a{
 	background: #ebeced;
 }
 .post{
-	float: left;
-	width: 300px;
-	height: 320px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 30px;
-	background: #fff;
-	border-radius: 5px;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-	/*专门为date设置的样式*/
-	position: relative;
-}
-
-.post .thumbnail-image{
-	display: block;
-	position: relative;
-
-}
-
-.post .thumbnail-image:before{
-	display: block;
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
 	width: 100%;
-	height: 100%;
-	background: #000;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	opacity: 0;
-	transition:opacity 1s;
-
-}
-.post .thumbnail-image:hover:before{
-	opacity: 0.6;
-}
-
-.post .thumbnail {
-	/*ie*/
-	display: block;
-	width: 300px;
-	height: 200px; 
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+    height: 280px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .post .post-info{
-	margin: 24px;
+	width: 60%;
+    padding: 45px 30px;
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
+    background: -moz-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
+    background: -ms-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
+    background: linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
+    display: inline-block;
+    letter-spacing: normal;
+}
+.post-info p {
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    line-height: 22px;
 }
 
 .post .post-info a{
@@ -115,20 +94,6 @@ a{
 }
 
 .post .post-info a:hover{
-	color: #b5b9bd;
-}
-
-.post h3{
-	font-size: 18px;
-	line-height: 1.7;
-	font-weight: normal;
-}
-
-.post .date{
-	position: absolute;
-	left: 24px;
-	bottom: 10px;
-	font-size: 13px;
 	color: #b5b9bd;
 }
 
