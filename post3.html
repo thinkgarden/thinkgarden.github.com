@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Enable responsiveness on mobile devices-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<!-- font-awesome -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+html,
+body {
+  overflow-x: hidden;
+}
+a {
+  color: #268bd2;
+  text-decoration: none;
+}
+a strong {
+  color: inherit;
+}
+/* `:focus` is linked to `:hover` for basic accessibility */
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+html {
+font-family: 'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+}
+@media (min-width: 38em) {
+  html {
+    font-size: 20px;
+  }
+}
+body {
+  font-size: 0.80rem;
+  color: #515151;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+  font-weight: 400;
+  color: #313131;
+  letter-spacing: -.025rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+h4, h5, h6 {
+  font-weight:bold;
+  margin-top: 1rem;
+  font-size: 0.90rem;
+}
+
+p {
+  font-size: 0.80rem;
+}
+
+/*
+ * Wrapper
+ *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
+ */
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  max-width: 38rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 28rem;
+}
+@media (min-width: 38em) {
+  .container {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
+}
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+}
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #bdbdbd;
+}
+.masthead-title a {
+  color: #bdbdbd;
+}
+.masthead-title small {
+  font-size: 75%;
+  font-weight: 400;
+  color: #bdbdbd;
+  letter-spacing: 0;
+}
+@media (max-width: 48em) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+}
+
+
+/* Style and "hide" the sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -14rem;
+  width: 14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  font-family: 'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+  font-size: .875rem; /* 15px */
+  color: rgba(255,255,255,.6);
+  background-color: #202020;
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+/* Sidebar content */
+.sidebar a {
+  font-weight: normal;
+  color: #fff;
+}
+.sidebar-item {
+  padding: 1rem;
+}
+.sidebar-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  display: none;
+}
+
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
+.sidebar-toggle {
+  position: absolute;
+  top:  1rem;
+  left: 1rem;
+  display: block;
+  width: 1.2rem;
+  padding: .5rem .65rem;
+  color: #505050;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sidebar-toggle:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-bottom: .125rem;
+  border-top: .375rem double;
+  border-bottom: .125rem solid;
+
+  /* Make the border inside the box */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: #fff;
+  background-color: #505050;
+}
+
+@media (min-width: 30.1em) {
+  .sidebar-toggle {
+    position: fixed;
+    width: 1.25rem;
+  }
+  .sidebar-toggle:before {
+    padding-bottom: .15rem;
+    border-top-width: .45rem;
+    border-bottom-width: .15rem;
+  }
+}
+/* Slide effect
+ *
+ * Handle the sliding effects of the sidebar and content in one spot, seperate
+ * from the default styles.
+ *
+ * As an a heads up, we don't use `transform: translate3d()` here because when
+ * mixed with `position: fixed;` for the sidebar toggle, it creates a new
+ * containing block. Put simply, the fixed sidebar toggle behaves like
+ * `position: absolute;` when transformed.
+ *
+ * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
+ */
+
+.wrap,
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.wrap,
+.sidebar-toggle {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition: transform .3s ease-in-out;
+}
+#sidebar-checkbox:checked + .sidebar {
+  z-index: 10;
+  visibility: visible;
+}
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .wrap,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(14rem);
+      -ms-transform: translateX(14rem);
+          transform: translateX(14rem);
+}
+
+.post-date {
+    font-size: 0.75rem;
+    display: block;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: #bdbdbd;
+}
+
+/* Code */
+code,
+pre {
+  font-family: 'Open Sans','Helvetica Neue', Helvetica, Tahoma, Arial, "Hiragino Sans GB", 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
+}
+code {
+  padding: .25em .5em;
+  font-size: 80%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 0.80rem;
+  line-height: 1.8;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+pre code {
+  padding: 0;
+  font-size: 80%;
+  color: inherit;
+  background-color: transparent;
+}
+
+
+</style>
+</head>
+<body>
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>『he looks like a dog so』 『because he is a PM』</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/index.html" target="_self"><i class="fa fa-home fa-fw"></i>&nbsp;&nbsp;&nbsp; Home</a>
+    <a class="sidebar-nav-item" href="/#" target="_self"><i class="fa fa-archive fa-fw"></i>&nbsp;&nbsp;&nbsp; Archive</a>
+    <a class="sidebar-nav-item" href="#" target="_self"><i class="fa fa-user fa-fw"></i>&nbsp;&nbsp;&nbsp; About</a>
+    <a class="sidebar-nav-item" href="#" target="_self"><i class="fa fa-cog fa-spin fa-fw"></i>&nbsp;&nbsp;&nbsp; Resume</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2015. All rights reserved.
+    </p>
+
+  </div>
+</div>
+
+	<div class="wrap">
+		<div class="masthead">
+			<div class="container">
+			    <h3 class="masthead-title">
+			    <a href="/" target="_self" title="Home">慢鱼</a>
+			    <small></small></h3>
+			</div>
+		</div>
+		<div class="container content">
+        <div class="post">
+  			<h1 class="post-title" style="text-align:center">颠覆伤痕文学</h1>
+			<br>
+  			<span class="post-date" style="text-align:center">2015.01.02</span>
+ 			<div style="border:1px dashed #eeeeee"></div> 
+ 			<br>
+ 			<p>  <!-- more --> 
+ 				<div class="highlight"><pre><code class="language-text" data-lang="text">在很多人眼里，文革是一段灰色痛苦的岁月，文明的践踏与人性的扭曲纠葛在一起。描写文革的文学作品无论是大师级（如巴金随想录），还是大批不知名的作者，无一不是用痛苦的氛围去诠释那段不可磨灭的岁月。这种文学被称为伤痕文学．邓小平说“哭哭啼啼，没有出息”，说得正是此类文学。然而在芸芸众书中却也可觅获些许让人欣喜的作品，它们完全颠覆了一般所看的近乎陈词滥调般的文革作品，王小波的《黄金时代》既是其中浓墨重彩而又不可忘怀的一笔。  </code></pre></div> 
+ 				<p><br>
+				很多人总对黄金时代有一种异见，觉得黄金时代是一种并无多少文学价值的作品，低俗不堪，荼毒百姓。原因在于小说中王小波用大量的笔墨，酣畅淋漓的描绘了主人公王二与众多女友的性爱场面，细节详尽，好似亲眼旁观，几可乱真。叫人阅毕激情四溢，欲罢不能。很多人已开始时抱着看黄书的心态去看这本书，到最后才发觉买错了。当然，就连王小波自己都声称这本小说与维多利亚时期的地下小说颇为相似，作者自身都为小说的定性感到困难，也无怪乎大众的非议了。但王小波也说在他的所有作品中最喜欢的当属《黄金时代》，称之为他的“宠儿”。那么，到底这是一部怎么样的小说呢，难道仅仅是一种用文革的幌子去讲情爱的小说而已吗？</p>
+
+				<p>要想理解王小波之所以要运用大量性描写，我觉得首先要理解文革时所处的环境。人不是一个理性的动物（尽管我们一直标榜），又其最原始的一面，暴力，自私，当然还有最原始的——性。性是人类区别于其他低等动物的很重要的方面，因为性不仅是繁衍，也是欢愉的表达。</p>
+
+				<p>在文革所处的环境下，人完全没有独立人格的存在前提，被一种高度的愚蠢思潮所冲刷，灌输一种愚昧的理念，结果当然是变得人不人鬼不鬼（这点可以从文革期间拍得样板戏中窥见，长得不一样，但表情全一个样）。整天提心吊胆，内心饱受政治的煎熬，在这种环境下，最原始的一种生存态度——性，被无情的抑制和打压着。当人脱开表面的文革去壳，成为正常的我时，一种对性的渴望便在那一刹那爆发了，成为填补空虚，平衡压抑甚至找回自尊的药剂。</p>
+
+				<p>在王二的生活中，性成了生活中唯一的精神慰藉品。当生活被政治占领，当工作变得可有可无，当经济背景贫瘠潦倒，当知识讯息变得封闭单一，当个人尊严变得卑微扭曲，我们还能干什么？！或许，做爱，才能拯救他们... <br></p> 		
+		</div>
+    	</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+	
+	<script>
+    (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+
+	</script>
+</body>
+</html>
