@@ -32,11 +32,13 @@ a{
 }
 
 .container{
-	max-width: 21em;
+	max-width: 28em;
 	margin: 0 auto;
 }
 @media (min-width:38em){
-	max-width:36rem;
+	.container{
+	  max-width:36rem;
+	}
 }
 @media (min-width: 50em) {
   .container {
