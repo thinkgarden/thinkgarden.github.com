@@ -35,14 +35,23 @@ a{
 	max-width: 28em;
 	margin: 0 auto;
 }
-@media (min-width: 38em) {
+@media (min-width: 50em) {
   .container {
-    max-width: 32rem;
+    max-width: 48rem;
+  }
+  .banner-page{
+  	height:18em;
   }
 }
-@media (min-width: 56em) {
+@media (min-width: 62em) {
   .container {
-    max-width: 38rem;
+    max-width: 60rem;
+  }
+  .banner-page{
+  	height:24em;
+  }
+  .post .post-info{
+  	width:50%;
   }
 }
 .clearfix:before,
@@ -63,19 +72,19 @@ a{
 }
 
 .banner-page{
-	height: 390px;
+	height: 16em;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-position: center center;
 	margin-top:-50px; 
 }
 .post-list-wrapper{
-	padding-top: 70px;
+	padding-top: 2.5em;
 	background: #ebeced;
 }
 .post{
 	width: 100%;
-    height: 280px;
+    height: 12em;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -84,7 +93,6 @@ a{
 }
 
 .post .post-info{
-	width: 50%;
 	height: 100%;
 	position: relative;
 	color:#fff;
