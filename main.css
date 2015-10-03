@@ -82,12 +82,12 @@ a{
 	margin-top:-50px; 
 }
 .post-list-wrapper{
-	padding-top: 2.5em;
+	padding-top: 1.5em;
 	background: #ebeced;
 }
 .post{
-	margin-left:1rem;
-	margin-right:1rem;
+	margin-left:0.5rem;
+	margin-right:0.5rem;
 	margin-bottom: 1.5rem;
     height: 12rem;
     background-size: cover;
@@ -101,7 +101,7 @@ a{
 	height: 100%;
 	position: relative;
 	color:#fff;
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 0.5rem;
     background: -webkit-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
     background: -moz-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
     background: -ms-linear-gradient(left,rgba(0,0,0,0.65),transparent 100%);
@@ -111,14 +111,19 @@ a{
     box-sizing:boder-box;
 }
 .post-info p {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.2rem;
     color: #e0e0e0;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
+    overflow : hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 3;
+  	-webkit-box-orient: vertical;
 }
 
 .post-info p.date{
 	position: absolute;
-	bottom: 1.5rem;
+	bottom: 0.3rem;
 }
 
 .post .post-info a{
