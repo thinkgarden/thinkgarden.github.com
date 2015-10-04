@@ -4,12 +4,36 @@
 	<meta charset="UTF-8">
 	<title>慢鱼的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
 	<link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-   <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.png">
 </head>
 <body class="welcome">
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+  <!-- Toggleable sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-item">
+      <p>『he looks like a dog so』 『because he is a PM』</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/index.html" target="_self"><i class="fa fa-home fa-fw"></i>&nbsp;&nbsp;&nbsp; Home</a>
+      <a class="sidebar-nav-item" href="/#" target="_self"><i class="fa fa-archive fa-fw"></i>&nbsp;&nbsp;&nbsp; Archive</a>
+      <a class="sidebar-nav-item" href="#" target="_self"><i class="fa fa-user fa-fw"></i>&nbsp;&nbsp;&nbsp; About</a>
+      <a class="sidebar-nav-item" href="#" target="_self"><i class="fa fa-cog fa-spin fa-fw"></i>&nbsp;&nbsp;&nbsp; Resume</a>
+    </nav>
+
+    <div class="sidebar-item">
+      <p>
+        &copy; 2015. All rights reserved.
+      </p>
+    </div>
+  </div>
+  <div class="mobile-header row-1">
+      <h3 class="f-blue f20">慢鱼</h3>
+      <p class="f12">若你喜欢怪人其实我很美</p>
+  </div>
   <div class="header">
     <div class="container clearfix">
       <ul class="nav">
@@ -49,4 +73,24 @@
       </ul>
     </div>
   </div>
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  <script>
+    (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+
+  </script>
 </body>
+</html>
