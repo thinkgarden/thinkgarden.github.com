@@ -243,14 +243,6 @@ a{
 	bottom: 2px;
 }
 
-.post .post-info a{
-	color: #000;
-}
-
-.post .post-info a:hover{
-	color: #50bcb6;
-}
-
 /*layout.css*/
 .mobile-header{
 	margin: 1em auto;
