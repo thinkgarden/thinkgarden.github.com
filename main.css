@@ -507,17 +507,12 @@ a.sidebar-nav-item:focus {
 
 .blog-wrapper{
 	height: auto;
-	max-width: 28rem;
-	margin-top: 1rem;
 	background:#fafafa;
-	/*background: #fff;
-	box-shadow: 0 2px 5px  rgba(0,0,0,0.4);*/
 	padding:0 0.5rem;
 }
-@media(min-width: 44em){
-	.blog-wrapper{
-		max-width:42em;
-	}
+
+.blog-wrapper p{
+	margin-bottom: 1em;
 }
 
 .post-title{
@@ -525,7 +520,7 @@ a.sidebar-nav-item:focus {
 	font-weight: normal;
 	color: #eb3170;
 	text-align: center;*/
-	margin:10px 0;
+	margin-top:1em;
 	font-size: 2rem; 
 	font-weight: 700;
 	-webkit-font-smoothing: antialiased;
@@ -538,7 +533,7 @@ a.sidebar-nav-item:focus {
 .author-date{
 	color:rgba(0,0,0,0.44);
 	line-height: 1;
-	margin-bottom: 30px;
+	margin: 0.4em 0;
 }
 
 .post-img {
