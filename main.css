@@ -499,21 +499,20 @@ a.sidebar-nav-item:focus {
 
 .blog-banner{
 	background: url("images/banner2.jpg");
-	height: 10rem;
+	height: 12rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -50px;
 }
 
 .blog-wrapper{
-	margin-left:1rem;
-	margin-right:1rem;
 	height: auto;
-	max-width: 28em;
-	margin-top: 1.8rem;
+	max-width: 28rem;
+	margin-top: 1rem;
+	background:#fafafa;
 	/*background: #fff;
 	box-shadow: 0 2px 5px  rgba(0,0,0,0.4);*/
-	padding:30px;
+	padding:0 0.5rem;
 }
 @media(min-width: 44em){
 	.blog-wrapper{
@@ -527,7 +526,7 @@ a.sidebar-nav-item:focus {
 	color: #eb3170;
 	text-align: center;*/
 	margin:10px 0;
-	font-size: 3rem; 
+	font-size: 2rem; 
 	font-weight: 700;
 	-webkit-font-smoothing: antialiased;
 	font-family: sans-serif;
