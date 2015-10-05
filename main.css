@@ -263,6 +263,9 @@ a{
   .banner-page{
   	height:18em;
   }
+  .blog-banner{
+  	height:18em;
+  }
 }
 @media (min-width: 62em) {
   .container {
