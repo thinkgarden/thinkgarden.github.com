@@ -263,9 +263,6 @@ a{
   .banner-page{
   	height:18em;
   }
-  .blog-banner{
-  	height:18em;
-  }
 }
 @media (min-width: 62em) {
   .container {
@@ -506,6 +503,11 @@ a.sidebar-nav-item:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -50px;
+}
+@media(min-width:42em){	
+	.blog-banner{
+	  	height:18em;
+	  }
 }
 
 .blog-wrapper{
