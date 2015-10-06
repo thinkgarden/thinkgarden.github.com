@@ -389,6 +389,10 @@ a{
 	}
 }
 
+.wrapper .container{
+	min-width: 320px;
+}
+
 /* Style and "hide" the sidebar */
 .sidebar {
   position: fixed;
