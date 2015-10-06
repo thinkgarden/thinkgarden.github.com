@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <div class="wrapper">
 	<div class="container">
 		<div class="content">
