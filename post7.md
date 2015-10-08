@@ -101,6 +101,50 @@ var prefix = require('gulp-autoprefixer');
 ```
 这样，在输出的 main.css 中，就可以看到 vendor prefix 已经自动添加了。
 
+####gulp watch
+```
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var prefix = require('gulp-autoprefixer');
+
+gulp.task('sass', function(){
+  gulp.src('styles/main.scss')
+      .pipe(sass())
+      .pipe(prefix())
+      .pipe(gulp.dest('css'));
+});
+
+gulp.task('watch', function(){
+  gulp.watch('styles/*.scss', ['sass']);
+});
+```
+
+####定制自己的色盘
+
+http://www.materialpalette.com/cyan/pink
+####主色
+主色要至少占据页面 30% 的区域，可以配合黑白灰，共同构成页面的大背景。
+
+####强调色
+用来凸显一些重要操作或内容。
+
+####dark/light 背景色
+700 的深色背景可以用来做状态栏，突出一些比较重要的操作，300 的浅色区域可以用来放次要信息。参考：Google 官方的 Material 色盘使用说明 。
+
+####主从文字颜色
+要体现内容层次，一方面可以用字体大小，但是如果配上主从字体颜色，效果会更好。 关于颜色使用，官方是给了 spec 的。 用到的字体设置：
+```
+font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+```
+
+###stage2
+对项目进行组件化重构，突出一个概念：组件化。会用到 react 和 webpack 。
+
+这个阶段的任务是：使用 react 重构项目，学会用 webpack 来构建项目。使得代码变得模块化，分层化，便于维护。
+
+####资源
+国内淘宝npm[镜像](http://npm.taobao.org/)
+
 
 
 
