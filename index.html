@@ -1,97 +1,60 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-	<meta charset="UTF-8">
-	<title>慢鱼的blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="shortcut icon" href="images/favicon.png">
-</head>
-<body class="welcome">
-  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-  <!-- Toggleable sidebar -->
-  <div class="sidebar" id="sidebar">
-    <div class="sidebar-item">
-      <p>『he looks like a dog so』 『because he is a PM』</p>
-    </div>
-
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/index.html" target="_self"><i class="fa fa-home fa-fw"></i>&nbsp;&nbsp;&nbsp; Home</a>
-      <a class="sidebar-nav-item" href="/#" target="_self"><i class="fa fa-archive fa-fw"></i>&nbsp;&nbsp;&nbsp; Archive</a>
-      <a class="sidebar-nav-item" href="#" target="_self"><i class="fa fa-user fa-fw"></i>&nbsp;&nbsp;&nbsp; About</a>
-      <a class="sidebar-nav-item" href="#" target="_self"><i class="fa fa-cog fa-spin fa-fw"></i>&nbsp;&nbsp;&nbsp; Resume</a>
-    </nav>
-
-    <div class="sidebar-item">
-      <p>
-        &copy; 2015. All rights reserved.
-      </p>
-    </div>
+---
+layout: default
+title: 慢鱼的blog
+---
+{% include sidebar.html %}
+<div class="mobile-header row-1">
+    <h3 class="f-light f20">慢鱼</h3>
+    <p class="f10">若你喜欢怪人其实我很美</p>
+</div>
+<div class="header">
+  <div class="container clearfix">
+    <ul class="nav">
+      <li class="current"><a href="index.html">Blog</a></li>
+      <li><a href="">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
   </div>
-  <div class="mobile-header row-1">
-      <h3 class="f-light f20">慢鱼</h3>
-      <p class="f10">若你喜欢怪人其实我很美</p>
-  </div>
-  <div class="header">
-    <div class="container clearfix">
-      <ul class="nav">
-        <li class="current"><a href="index.html">Blog</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-    <a class="logo" href="index.html">慢鱼</a>
-  </div>
-	<div class="banner-page clearfix" style="background-image: url(images/banner2.jpg)">
-  </div>
-  <div class="post-list-wrapper">
-    <div class="container clearfix">
-        <div class="post">
-          <div class="post-info">
-            <p> <a href="post1.html" class="f-light f18">折腾吧少年</a> </p>
-            <p class="detail f14 f-gray">5月份从做了四个月的一家问卷公司离职了，这次是自己在毕业两年里第三次换工作了。在别人选择求稳定的同时，而我却在不断乱跳。</p>
-             <p class="bottom"> <span class="date f14">2015年9月23号</span><span class="tag f10">随笔<span></p>
-          </div>
-
+  <a class="logo" href="index.html">慢鱼</a>
+</div>
+<div class="banner-page clearfix" style="background-image: url(images/banner2.jpg)">
+</div>
+<div class="post-list-wrapper">
+  <div class="container clearfix">
+      <div class="post">
+        <div class="post-info">
+          <p> <a href="post1.html" class="f-light f18">折腾吧少年</a> </p>
+          <p class="detail f14 f-gray">5月份从做了四个月的一家问卷公司离职了，这次是自己在毕业两年里第三次换工作了。在别人选择求稳定的同时，而我却在不断乱跳。</p>
+           <p class="bottom"> <span class="date f14">2015年9月23号</span><span class="tag f10">随笔<span></p>
         </div>
-        <div class="post">
-          <div class="post-info">
-            <p> <a href="post3.html" class="f-light f18">颠覆伤痕文学</a> </p>
-            <p class="detail f14 f-gray">很多人总对黄金时代有一种异见，觉得黄金时代是一种并无多少文学价值的作品，低俗不堪，荼毒百姓。原因在于小说中王小波用大量的笔墨，酣畅淋漓的描绘了主人公王二与众多女友的性爱场面，细节详尽，好似亲眼旁观，几可乱真.</p>
-           <p class="bottom"> <span class="date f14">2015年1月1号</span><span class="tag f10">文摘<span>
-          </div>
+
+      </div>
+      <div class="post">
+        <div class="post-info">
+          <p> <a href="post3.html" class="f-light f18">颠覆伤痕文学</a> </p>
+          <p class="detail f14 f-gray">很多人总对黄金时代有一种异见，觉得黄金时代是一种并无多少文学价值的作品，低俗不堪，荼毒百姓。原因在于小说中王小波用大量的笔墨，酣畅淋漓的描绘了主人公王二与众多女友的性爱场面，细节详尽，好似亲眼旁观，几可乱真.</p>
+         <p class="bottom"> <span class="date f14">2015年1月1号</span><span class="tag f10">文摘<span>
         </div>
-    </div>
+      </div>
   </div>
-  <div class="footer">
-    <div class="container clearfix">
-      <ul class="icon-wrapper">
-        <li class="icon github"><a href="http://github.com/thinkagrden"> <i class="fa fa-github-alt"></i> </a></li>
-        <li class="icon email"><a href="mailto:thinkgarden1990@163.com"><i class="fa fa-envelope-o"></i></a></li>
-        <li class="icon weibo"><a href="http://weibo.com/islowfish"><i class="fa fa-weibo"></i></a></li>
-      </ul>
-    </div>
-  </div>
-  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-  <script>
-    (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
+</div>
+{% include footer.html %}
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+<script>
+  (function(document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
 
-        document.addEventListener('click', function(e) {
-          var target = e.target;
+      document.addEventListener('click', function(e) {
+        var target = e.target;
 
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
+        if(!checkbox.checked ||
+           sidebar.contains(target) ||
+           (target === checkbox || target === toggle)) return;
 
-          checkbox.checked = false;
-        }, false);
-      })(document);
+        checkbox.checked = false;
+      }, false);
+    })(document);
 
-  </script>
-</body>
-</html>
+</script>
