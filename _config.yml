@@ -1,2 +1,30 @@
-# Permalinks
-permalink:        pretty
+permalink: /:categories/:year/:month/:day/:title 
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+highlighter: pygments
+
+# Setup
+title:            慢鱼
+tagline:          ''
+description:      '若你喜欢怪人，其实我很美'
+url:              http://thinkgarden.github.io
+
+author:
+  name:           '慢鱼'
+  email:          thinkgarden1990@163.com
+
+paginate:      5
+
+# Custom vars
+version:          0.0.3
+
+
+
+production_url : http://thinkgarden.github.io
+
+
+archive_path: /archive.html
+categories_path : /categories.html
+tags_path : /tags.html
+atom_path : /atom.xml
+rss_path : /rss.xml

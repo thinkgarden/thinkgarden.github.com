@@ -205,7 +205,10 @@ a{
 	padding-bottom: 1.5em;
 	background: #ebeced;
 }
-@media(){
+.posts{
+	display: none;
+}
+@media(min-width: 62em){
 	.post-list-wrapper{
 		display: none;
 	}
@@ -261,12 +264,12 @@ a{
 }
 @media (min-width:38em){
 	.container{
-	  max-width:36rem;
+	  max-width:48rem;
 	}
 }
 @media (min-width: 50em) {
   .container {
-    max-width: 48rem;
+    max-width: 53rem;
   }
   .banner-page{
   	height:18em;
