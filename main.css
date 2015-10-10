@@ -15,9 +15,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #bdbdbd;
   letter-spacing: -.025rem;
 }
-
 * {
-	box-sizing:boder-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 ul {
   padding: 0;
@@ -253,6 +254,24 @@ a{
 	position: absolute;
 	bottom: 2px;
 }
+
+.post-title,
+.post-title a {
+  color: #303030;
+}
+.post-title {
+  margin-top: 0;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+
 
 /*layout.css*/
 .mobile-header{
