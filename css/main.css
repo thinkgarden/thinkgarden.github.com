@@ -1,20 +1,13 @@
- 
-/*common css*/
+ /*common css*/
 html,body,h1,h2,h3,h4,h5,h6,p,ul{
 	margin: 0;
 	padding: 0;
 }
-body{
-	font: 16px/1.7 arial,'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
-	color: #313131;
-	background: #fff;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
-  font-weight: 400;
-  color: #bdbdbd;
-  letter-spacing: -.025rem;
-}
+body {
+	font: 16px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+	color: #333;
+	background-color: #fff
+}	
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -171,7 +164,6 @@ a{
 	margin-left: 3.3333333%
 }
 
-
 .row-4,.col-1,.col-2,.col-6,.row-1,.row-2,input[type=text],input[type=password],select,textarea {
 	box-sizing: border-box
 }
@@ -189,10 +181,6 @@ a{
 }
 
 /*welcome.css*/
-.nav {
-	display: none;
-}
-
 .banner-page{
 	height: 12em;
 	background-size: cover;
@@ -209,14 +197,6 @@ a{
 .posts{
 	display: none;
 }
-@media(min-width: 62em){
-	.post-list-wrapper{
-		display: none;
-	}
-	.posts{
-		display: block;
-	}
-}
 .post-list-wrapper .post:first-child {
     border-top: 1px solid #dcdce0;
 }
@@ -225,11 +205,10 @@ a{
     border-left: 1px solid #dcdce0;
     border-right: 1px solid #dcdce0;
     border-bottom: 1px solid #dcdce0;
-    height: 9rem;
+    height: 7rem;
     overflow: hidden;
     position: relative;
 }
-
 .post .post-info{
 	color:#000;
     padding: 1rem;
@@ -257,7 +236,9 @@ a{
 
 .post-title,
 .post-title a {
-  color: #303030;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color:#50bcb6;
 }
 .post-title {
   margin-top: 0;
@@ -270,8 +251,6 @@ a{
   margin-bottom: 1rem;
   color: #9a9a9a;
 }
-
-
 
 /*layout.css*/
 .mobile-header{
@@ -384,11 +363,11 @@ a{
 	margin-right: 12px;
 }
 .bottom .tag{
-	height: 18px;
+	height: 28px;
 	background-color: #b1b2b2;
     border-radius: 3px;
     color: #fff;
-    padding: 3px 8px;
+    padding: 5px 9px;
 }
 
 .footer{
@@ -431,6 +410,90 @@ a{
 .wrapper .container{
 	min-width: 320px;
 }
+
+
+.post-body{
+	font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	word-wrap: break-word
+}
+
+.post-body>*:first-child {
+	margin-top: 0 !important
+}
+
+.post-body>*:last-child {
+	margin-bottom: 0 !important
+}
+
+.post-body h1,.post-body h2,.post-body h3,.post-body h4,.post-body h5,.post-body h6 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-weight: bold;
+	line-height: 1.4;
+	color: #000;
+	vertical-align: middle;
+	visibility: hidden;
+}
+.post-body h1 tt,.post-body h1 code,.post-body h2 tt,.post-body h2 code,.post-body h3 tt,.post-body h3 code,.post-body h4 tt,.post-body h4 code,.post-body h5 tt,.post-body h5 code,.post-body h6 tt,.post-body h6 code {
+	font-size: inherit
+}
+
+.post-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2.25em;
+	line-height: 1.2;
+	border-bottom: 1px solid #eee
+}
+
+.post-body h1 .anchor {
+	line-height: 1
+}
+
+.post-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.75em;
+	line-height: 1.225;
+	border-bottom: 1px solid #eee
+}
+
+.post-body h2 .anchor {
+	line-height: 1
+}
+
+.post-body h3 {
+	font-size: 1.5em;
+	line-height: 1.43
+}
+
+.post-body h4 {
+	font-size: 1.25em
+}
+
+.post-body h5 {
+	font-size: 1em
+}
+
+.post-body h6 {
+	font-size: 1em;
+	color: #777
+}
+
+.post-body p,.post-body blockquote,.post-body ul,.post-body ol,.post-body dl,.post-body table,.post-body pre {
+	margin-top: 0;
+	margin-bottom: 16px
+}
+
+.post-body hr {
+	height: 4px;
+	padding: 0;
+	margin: 16px 0;
+	background-color: #e7e7e7;
+	border: 0 none
+}
+
+
 
 /* Style and "hide" the sidebar */
 .sidebar {
@@ -541,7 +604,7 @@ a.sidebar-nav-item:focus {
 /*blog style*/
 
 .blog-banner{
-	background: url("images/banner2.jpg");
+	background: url("/images/banner2.jpg");
 	height: 12rem;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -555,7 +618,6 @@ a.sidebar-nav-item:focus {
 
 .blog-wrapper{
 	height: auto;
-	background:#fafafa;
 	padding:0 0.5rem;
 }
 
@@ -563,21 +625,7 @@ a.sidebar-nav-item:focus {
 	margin-bottom: 1em;
 }
 
-.post-title{
-	/*margin: 30px;
-	font-weight: normal;
-	color: #eb3170;
-	text-align: center;*/
-	margin-top:1em;
-	font-size: 2rem; 
-	font-weight: 700;
-	-webkit-font-smoothing: antialiased;
-	font-family: sans-serif;
-	color: rgba(0,0,0,0.8);
-	letter-spacing: -0.02em;
-	line-height: 1;
-	margin-left: -3px;
-}
+
 .author-date{
 	color:rgba(0,0,0,0.44);
 	line-height: 1;
