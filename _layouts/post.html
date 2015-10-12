@@ -12,12 +12,15 @@ layout: default
     </div>
 	<a class="logo" href="/index.html">慢鱼</a>
 </div>
-<div class="blog-banner"></div>
+<div class="blog-banner">
+	<div class="post-header">
+		<h1 class="post-title f-white f20"> {{ page.title }} </h1>
+		<div class="author-date f12 f-white"> 慢鱼，{{ page.date | date:'%Y.%m.%d' }} </div>
+	</div>
+</div>
 <div class="blog-wrapper">
 	<div class="container clearfix">
-		<h1 class="post-title"> {{ page.title }} </h1>
-		<div class="author-date f10"> 慢鱼，{{ page.date | date:'%Y.%m.%d' }} </div>
-		<div class="post-body">
+		<div>
 		{{ content }}
 		</div>
 	</div>

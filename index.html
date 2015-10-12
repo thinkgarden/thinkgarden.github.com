@@ -23,10 +23,8 @@ title: 慢鱼的blog
   <div class="container clearfix">
      {% for post in site.posts %}
       <div class="post">
-        <div class="post-info">
-          <h1 class="post-title"> <a href="{{ post.url }}" class="f-light f18"> {{ post.title }}</a> </h1>
-          <p class="bottom"> <span class="date f14">{{ post.date | date_to_string }}</span><span class="tag f10">{{ post.tags }}</span></p>
-        </div>
+          <h1 class="post-title f18"> <a href="{{ post.url }}" class="f-black f18"> {{ post.title }}</a> </h1>
+          <p> <span class="tag f10">{{ post.tags }}</span><span class="date f14">{{ post.date | date:'%Y年%m月%d日' }}</span></p>
       </div>
     {% endfor %}
   </div>

@@ -1,5 +1,5 @@
  /*common css*/
-html,body,h1,h2,h3,h4,h5,h6,p,ul{
+html,body,h1,h2,h4,h5,h6,p,ul{
 	margin: 0;
 	padding: 0;
 }
@@ -12,6 +12,16 @@ body {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+h3{
+	font-size: 1.3rem;
+	margin-top: 0.5em;
+	margin-bottom: 0.3em; 
+}
+h4{
+	font-size: 1.2rem;
+	margin-top: 0.5em;
+	margin-bottom: 0.3em; 
 }
 ul {
   padding: 0;
@@ -194,9 +204,7 @@ a{
 	padding-bottom: 1.5em;
 	background: #ebeced;
 }
-.posts{
-	display: none;
-}
+
 .post-list-wrapper .post:first-child {
     border-top: 1px solid #dcdce0;
 }
@@ -205,18 +213,22 @@ a{
     border-left: 1px solid #dcdce0;
     border-right: 1px solid #dcdce0;
     border-bottom: 1px solid #dcdce0;
-    height: 7rem;
     overflow: hidden;
     position: relative;
-}
-.post .post-info{
-	color:#000;
-    padding: 1rem;
-    letter-spacing: normal;
-    box-sizing:boder-box;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
-.post-info p {
+.post-title,
+.post-title a {
+	font-weight: 400;
+}
+.post-title {
+  margin-top:0.5em ;
+  margin-bottom: 0.5em;
+}
+
+.post p {
     margin-bottom: 0.3rem;
     line-height: 1.2rem;
     overflow : hidden;
@@ -225,39 +237,27 @@ a{
   	-webkit-line-clamp: 3;
   	-webkit-box-orient: vertical;
 }
-.post-info p:first-child{
-	margin-bottom: 1rem;
+
+
+.post p span{
+	display: inline-block;
+	min-width: 1.2em;
+	margin-right: 0.8em;
+}
+.tag{
+	background-color: #c2c2c2;
+	border-radius: 4px;
+	padding: 0.3em 0.5em;
+	color:#fff;
 }
 
-.post-info .bottom{
-	position: absolute;
-	bottom: 2px;
-}
-
-.post-title,
-.post-title a {
-	font-size: 1.5rem;
-	font-weight: 400;
-	color:#50bcb6;
-}
-.post-title {
-  margin-top: 0;
-}
-
-/* Meta data line below post title */
-.post-date {
-  display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
-  color: #9a9a9a;
-}
 
 /*layout.css*/
 .mobile-header{
 	margin: 1em auto;
 }
 .container{
-	max-width: 28em;
+	max-width: 36rem;
 	margin: 0 auto;
 }
 @media (min-width:38em){
@@ -271,6 +271,7 @@ a{
   }
   .banner-page{
   	height:18em;
+  	display: block;
   }
 }
 @media (min-width: 62em) {
@@ -609,11 +610,20 @@ a.sidebar-nav-item:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -50px;
+	position: relative;
 }
 @media(min-width:42em){	
 	.blog-banner{
 	  	height:18em;
 	  }
+}
+
+.post-header{
+	position: absolute;
+	bottom: 1em;
+    width: 100%;
+    text-align: center;
+	color:#fff; 
 }
 
 .blog-wrapper{
@@ -623,11 +633,12 @@ a.sidebar-nav-item:focus {
 
 .blog-wrapper p{
 	margin-bottom: 1em;
+	padding: 0.3em 0.2em;
+	font-size: 16px;
 }
 
 
 .author-date{
-	color:rgba(0,0,0,0.44);
 	line-height: 1;
 	margin: 0.4em 0;
 }
@@ -637,4 +648,45 @@ a.sidebar-nav-item:focus {
   display: block;
   margin: 20px auto;
 }
+
+code,
+pre {
+  font-family: 'Open Sans','Helvetica Neue', Helvetica, Tahoma, Arial, "Hiragino Sans GB", 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
+}
+code {
+  padding: .25em .5em;
+  font-size: 80%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 0.80rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+pre code {
+  padding: 0;
+  font-size: 80%;
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Pygments via Jekyll */
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.highlight pre {
+  margin-bottom: 0;
+}
+
 
