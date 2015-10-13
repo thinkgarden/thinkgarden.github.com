@@ -245,7 +245,7 @@ a{
 	margin-right: 0.8em;
 }
 .tag{
-	background-color: #ff4081;
+	background-color: #8bc34a;
 	border-radius: 4px;
 	padding: 4px 8px;
 	color:#fff;
@@ -372,8 +372,7 @@ a{
 }
 
 .footer{
-	display: none;
-	border-top: 1px solid #eee;
+	border-top: 1px solid #333;
 }
 .icon-wrapper{
 	margin: 0 auto;
@@ -405,7 +404,7 @@ a{
 .footer a{
 	color: #fff;
 }
-@media(min-width: 60em){
+@media(min-width: 50rem){
 	.footer{
 		display: block;
 	}
@@ -561,6 +560,7 @@ a.sidebar-nav-item:focus {
   border-radius: 4px;
   cursor: pointer;
   z-index: 99;
+  box-sizing: content-box;
 }
 .sidebar-toggle:before {
   display: block;
