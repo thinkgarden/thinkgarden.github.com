@@ -221,16 +221,19 @@ a{
 
 .post-title,
 .post-title a {
-	font-weight: 400;
+	font-weight: 600;
+	color:#313131;
 }
 .post-title {
-  margin-top:0.5em ;
-  margin-bottom: 0.5em;
+  margin-top:1.2em ;
+  margin-bottom: 0.1em;
+  line-height: 1.2;
+  -webkit-transition: color .1s linear;
+    transition: color .1s linear;
 }
 
 .post p {
     margin-bottom: 0.3rem;
-    line-height: 1.2rem;
     overflow : hidden;
   	text-overflow: ellipsis;
   	display: -webkit-box;
@@ -305,6 +308,9 @@ a{
 	.mobile-header{
 		display: none;
 	}
+	.sidebar-toggle{
+		display: none;
+	}
 }
 
 .header .nav{
@@ -372,7 +378,7 @@ a{
 }
 
 .footer{
-	border-top: 1px solid #333;
+	display: none;
 }
 .icon-wrapper{
 	margin: 0 auto;
@@ -510,7 +516,7 @@ a{
   font-family: 'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
-  background-color: #03a9f4;
+  background-color: #50bcb6;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
