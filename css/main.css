@@ -246,9 +246,10 @@ a{
 	display: inline-block;
 	min-width: 1.2em;
 	margin-right: 0.8em;
+	line-height: 1;
 }
 .tag{
-	background-color: #8bc34a;
+	background-color: #b1b2b2;
 	border-radius: 4px;
 	padding: 4px 8px;
 	color:#fff;
@@ -270,7 +271,7 @@ a{
 }
 @media (min-width: 50em) {
   .container {
-    max-width: 53rem;
+    max-width: 57rem;
   }
   .banner-page{
   	height:18em;
@@ -568,6 +569,13 @@ a.sidebar-nav-item:focus {
   z-index: 99;
   box-sizing: content-box;
 }
+
+@media(min-width: 50rem){
+	.sidebar-toggle{
+		display: none;
+	}
+}
+
 .sidebar-toggle:before {
   display: block;
   content: "";
