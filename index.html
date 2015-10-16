@@ -2,7 +2,6 @@
 layout: default
 title: 慢鱼的blog
 ---
-{% include sidebar.html %}
 <div class="mobile-header row-1">
     <h3 class="f-light f20">慢鱼</h3>
     <p class="f10">若你喜欢怪人其实我很美</p>
@@ -30,22 +29,3 @@ title: 慢鱼的blog
   </div>
 </div>
 {% include footer.html %}
-<label for="sidebar-checkbox" class="sidebar-toggle"></label>
-<script>
-  (function(document) {
-      var toggle = document.querySelector('.sidebar-toggle');
-      var sidebar = document.querySelector('#sidebar');
-      var checkbox = document.querySelector('#sidebar-checkbox');
-
-      document.addEventListener('click', function(e) {
-        var target = e.target;
-
-        if(!checkbox.checked ||
-           sidebar.contains(target) ||
-           (target === checkbox || target === toggle)) return;
-
-        checkbox.checked = false;
-      }, false);
-    })(document);
-
-</script>
