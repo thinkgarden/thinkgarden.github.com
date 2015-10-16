@@ -384,7 +384,7 @@ a{
 .icon-wrapper{
 	margin: 0 auto;
 	margin-top: 1.8rem;
-	width: 15em;
+	width: 30em;
 	margin-bottom: 2em;
 }
 .footer .icon{
@@ -394,8 +394,9 @@ a{
 	line-height: 4rem;
 	text-align: center;
 	float: left;
-	margin-left: 1rem;
+	margin-left: 2rem;
 	font-size: 2em;
+	display:block;
 
 
 }
