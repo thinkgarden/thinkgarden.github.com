@@ -1,5 +1,5 @@
 permalink: pretty
-markdown:  redcarpet
+markdown:  kramdown
 highlighter: pygments
 
 # Setup
