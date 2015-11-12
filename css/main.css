@@ -672,7 +672,7 @@ a.sidebar-nav-item:focus {
 	padding:0 0.5rem;
 }
 .blog-wrapper ul li{
-	list-style:circle;
+	list-style:disc;
 }
 .blog-wrapper p{
 	padding: 0.3em 0.2em;
