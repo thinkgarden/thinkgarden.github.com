@@ -37,14 +37,14 @@ Any CSS property that uses the src function can use Data URI scheme to embed dat
 
 	.button {
 	    background:url(data:image/png /*embed code */)
-	}                                               
+	}
 
 	.button.active {
 	    background-position:0 -40px;
-	}                         
+	}
 
 	.button:hover {
-	    background-position: 0 -20px;   
+	    background-position: 0 -20px;
 	}
 
 #### Embedding Web Fonts in CSS
