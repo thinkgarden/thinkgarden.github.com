@@ -7,19 +7,19 @@ body {
 	font: 16px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 	color: #333;
 	background-color: #fff
-}	
+}
 * {
           box-sizing: border-box;
 }
 h3{
 	font-size: 1.3rem;
 	margin-top: 0.5em;
-	margin-bottom: 0.3em; 
+	margin-bottom: 0.3em;
 }
 h4{
 	font-size: 1.2rem;
 	margin-top: 0.5em;
-	margin-bottom: 0.3em; 
+	margin-bottom: 0.3em;
 }
 ul {
   padding: 0;
@@ -218,7 +218,7 @@ blockquote p:last-child {
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-position: center center;
-	margin-top:-50px; 
+	margin-top:-50px;
 	display: none;
 }
 .post-list-wrapper{
@@ -653,7 +653,7 @@ a.sidebar-nav-item:focus {
 	margin-top: -50px;
 	position: relative;
 }
-@media(min-width:42em){	
+@media(min-width:42em){
 	.blog-banner{
 	  	height:18em;
 	  }
@@ -664,7 +664,7 @@ a.sidebar-nav-item:focus {
 	bottom: 1em;
     width: 100%;
     text-align: center;
-	color:#fff; 
+	color:#fff;
 }
 
 .blog-wrapper{
@@ -705,12 +705,14 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  line-height: 1.6;
+  line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
   background-color: #f9f9f9;
+  padding: 10px;
+  font-size: 13px;
 }
 pre code {
   padding: 0;
