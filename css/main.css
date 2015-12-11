@@ -1,10 +1,10 @@
  /*common css*/
-html,body,h1,h2,h4,h5,h6,p,ul{
+html,body,h1,h2,h4,h5,h6,p,ul,button{
   margin: 0;
   padding: 0;
 }
 body {
-  font: 16px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 16px/1.4 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   color: #333;
   background-color: #fff
 }
@@ -216,7 +216,7 @@ blockquote p:last-child {
   *zoom: 1;
 }
 /*page.css*/
-.cd-hander{
+.cd-header{
   background: rgba(255,255,255,.95);
   box-shadow: 0 1px 2px rgba(0,0,0,.2);
   height:50px;
@@ -226,14 +226,17 @@ blockquote p:last-child {
   float: left;
   font-weight: 800;
   font-size: 18px;
-  margin:13px 0 0 5%;
+  margin:15px 0 0 5%;
+  color:#5e5e5e;
+  line-height: 20px;
 }
 @media only screen and (min-width: 768px){
   .cd-header{
     height: 70px;
+    background: #E58172;
   }
   .cd-header .logo{
-    margin: 23px 0 0 5%;
+    margin: 25px 0 0 5%;
   }
 }
 .cd-main-nav {
@@ -253,7 +256,7 @@ blockquote p:last-child {
   -webkit-transform:translateY(-100%);
           transform:translateY(-100%);
 }
-.cd-header ul.is-visiable{
+.cd-header ul.is-visible{
   -webkit-transform:translateY(50px);
           transform:translateY(50px);
 }
@@ -270,6 +273,25 @@ blockquote p:last-child {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+@media only screen and(min-width: 768px){
+  .cd-main-nav{
+    width:auto;
+    background: transparent;
+  }
+  .cd-header ul{
+    position: static;
+    height: 70px;
+    transform:translateY(0);
+  }
+  .cd-header ul a{
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    background: transparent;
+    border:0;
+    color:#fff;
+  }
+}
 .cd-banner{
   background: #E58172;
   height: 250px;
@@ -285,6 +307,31 @@ blockquote p:last-child {
   max-width: 768px;
   text-align: center;
 }
+.all_posts{
+  margin:0 auto;
+  padding: 0 15px;
+}
+.all_posts a{
+  color: #404040;
+}
+.all_posts a:hover{
+  color:#337ab7;
+  text-decoration: underline;
+}
+@media only screen and(min-width: 768px){
+  .all_posts{
+    margin:0 auto;
+    padding: 0 15px;
+    width: 750px;
+  }
+}
+
+@media only screen and(min-width: 992px){
+  .all_posts{
+    width: 970px;
+  }
+}
+
 
 /*welcome.css*/
 .banner-page{

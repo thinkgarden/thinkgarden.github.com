@@ -3,7 +3,7 @@ layout: page
 permalink: /archive/
 ---
 <header class="cd-header clearfix">
-  <a href="" class="logo">慢鱼的blog</a>
+  <a href="/index.html" class="logo">慢鱼的blog</a>
   <nav class="cd-main-nav clearfix">
     <ul>
       <li><a href="">HOME</a></li>
@@ -19,7 +19,7 @@ permalink: /archive/
     <p>你看到的，是我练习千字文的所有文章</p>
   </div>
 </div>
-
+<div class="all_posts">
 
 {% assign post_year1 = "" %}
 
@@ -29,11 +29,10 @@ permalink: /archive/
   {% endcapture %}
   {% if post_year1 != post_year2 %}
     {% assign post_year1 = post_year2 %}
-       {{ post_year1 }}
-    {% endif %}
-
-    <a href="{{ post.url }}" target="_self"> {{ post.title }}<span class="pull-right">{{ post.date | date:'%m月%d日' }}</span> </a>
-
+    <h3>{{ post_year1 }}</h3>
+  {% endif %}
+    <div class="post"><a href="{{ post.url }}" target="_self"> {{ post.title }}<span class="pull-right">{{ post.date | date:'%m月%d日' }}</span> </a></div>
 {% endfor %}
+</div>
 
 
