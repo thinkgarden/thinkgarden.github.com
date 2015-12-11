@@ -642,9 +642,17 @@ a.sidebar-nav-item:focus {
       -ms-transform: translateX(-14rem);
           transform: translateX(-14rem);
 }
+/* paginator */
+.paginator {
+    padding: 15px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #dcdce0;
+    border-left: 1px solid #dcdce0;
+    border-right: 1px solid #dcdce0;
+}
 
 /*blog style*/
-
 .blog-banner{
 	background: url("/images/banner2.jpg");
 	height: 12rem;

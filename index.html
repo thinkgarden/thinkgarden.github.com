@@ -20,7 +20,7 @@ title: 慢鱼的blog
 </div>
 <div class="post-list-wrapper">
   <div class="container clearfix">
-     {% for post in site.posts %}
+     {% for post in paginator.posts %}
       <div class="post">
           <h1 class="post-title f18"> <a href="{{ post.url }}" class="f-black f18"> {{ post.title }}</a> </h1>
           <p> <span class="date f14">{{ post.date | date:'%Y年%m月%d日' }}</span><span class="tag f10">{{ post.tags }}</span></p>
