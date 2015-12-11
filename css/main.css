@@ -250,8 +250,8 @@ blockquote p:last-child {
   top:0;
   left:0;
   width:100%;
-  -webkit-transform:translateY(100%);
-          transform:translateY(100%);
+  -webkit-transform:translateY(-100%);
+          transform:translateY(-100%);
 }
 .cd-header ul.is-visiable{
   -webkit-transform:translateY(50px);
@@ -262,9 +262,13 @@ blockquote p:last-child {
   height: 50px;
   line-height: 50px;
   padding-left: 5%;
-  background: #2f292a;
+  background: #fff;
   border-top: 1px solid #453c3d;
-  color: #8e7d7f;
+  font-size: 12px;
+  font-weight: 800;
+  color: #777;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .cd-banner{
   background: #E58172;
