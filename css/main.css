@@ -438,8 +438,63 @@ hr {
   }
 }
 
+/*new index.css*/
+body,
+html {
+    height: 100%;
+}
+.main-header{
+  position: relative;
+  margin-bottom: 15px;
+  height: 40vh;
+  background: #fff url(/imgaes/cd-background-2.jpg) center center no-repeat;
+}
+.main-header .scroll-down{
+  display: none;
+}
 
-/*welcome.css*/
+.main-header .vertical-handing{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 768px){
+  .main-header{
+    min-height: 100%;
+  }
+  .main-header .scroll-down {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -16px;
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-animation: bounce 4s 2s infinite;
+    animation: bounce 4s 2s infinite;
+  }
+
+}/*welcome.css*/
 .banner-page{
   height: 12em;
   background-size: cover;

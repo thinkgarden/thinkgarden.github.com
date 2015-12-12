@@ -1,0 +1,18 @@
+@charset 'utf-8';
+@import 'common';
+
+header {
+	height: 5em;
+	background-color: $primary-color;
+}
+.action{
+	height: 3em;
+	background-color: $primary-color-light;
+}
+.content{
+	height: 32em;
+}
+footer{
+	height: 5em;
+	background-color: #212121;
+}
