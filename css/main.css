@@ -292,9 +292,16 @@ blockquote p:last-child {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  .cd-header ul li{
+    display: inline-block;
+    margin-left: 1em;
+  }
   .cd-header ul a{
     display: inline-block;
+    height: auto;
+    line-height: normal;
     background: transparent;
+    padding: .6em 1em;
     border:0;
     color:#fff;
   }
@@ -303,6 +310,7 @@ blockquote p:last-child {
   background: #E58172;
   height: 250px;
   position: relative;
+  color:#fff;
 }
 @media only screen and (min-width: 768px){
   .cd-banner{
@@ -323,6 +331,16 @@ blockquote p:last-child {
   margin:0 auto;
   padding: 0 15px;
 }
+
+.all_posts .post{
+  border:0;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
+.all_posts .post .datetime{
+  display: inline-block;
+  padding-right: 0.3em;
+}
 .all_posts a{
   color: #404040;
 }
@@ -330,7 +348,7 @@ blockquote p:last-child {
   color:#337ab7;
   text-decoration: underline;
 }
-@media only screen and(min-width: 768px){
+@media only screen and (min-width: 768px){
   .all_posts{
     margin:0 auto;
     padding: 0 15px;
