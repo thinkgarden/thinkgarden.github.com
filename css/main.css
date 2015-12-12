@@ -241,6 +241,9 @@ blockquote p:last-child {
   .cd-header .logo{
     color:#fff;
   }
+  .cd-header .logo:hover,  .cd-header .logo:focus{
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 .cd-main-nav {
   float: right;
@@ -286,7 +289,8 @@ blockquote p:last-child {
   .cd-header ul{
     position: static;
     line-height: 50px;
-    transform:translateY(0);
+    -webkit-transform:translateY(0);
+            transform:translateY(0);
   }
   .cd-header ul.is-visible{
     -webkit-transform: translateY(0);
@@ -304,6 +308,42 @@ blockquote p:last-child {
     padding: .6em 1em;
     border:0;
     color:#fff;
+  }
+  .cd-header ul a:hover, .cd-header ul a:focus{
+     color: rgba(255, 255, 255, 0.8);
+  }
+}
+@media only screen and (min-width: 1170px){
+  .cd-header{
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+    -webkit-transform:translate3d(0px 0px 0px);
+            transform:translate3d(0px 0px 0px);
+    transition:background-color 0.3s ease 0s;
+  }
+  .cd-header.is-fixed {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;
+    position: fixed;
+    top: -50px;
+    transition: -webkit-transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s;
+  }
+  .cd-header.is-fixed .logo{
+    color:#404040;
+  }
+  .cd-header.is-fixed .logo:hover, .cd-header.is-fixed .logo:focus{
+    color:#0085a1;
+  }
+  .cd-header.is-fixed ul a, .cd-header.is-fixed ul a{
+     color:#404040;
+  }
+  .cd-header.is-fixed ul a:hover, .cd-header.is-fixed ul a:focus{
+     color:#0085a1;
+  }
+  .cd-header.is-visible {
+    -webkit-transform: translate3d(0px, 100%, 0px);
+            transform: translate3d(0px, 100%, 0px);
   }
 }
 .cd-banner{
