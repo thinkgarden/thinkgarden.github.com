@@ -217,8 +217,11 @@ blockquote p:last-child {
 }
 /*page.css*/
 .cd-header{
-  background: rgba(255,255,255,.95);
-  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  background: white;
   height:50px;
   z-index: 2;
 }
@@ -232,11 +235,11 @@ blockquote p:last-child {
 }
 @media only screen and (min-width: 768px){
   .cd-header{
-    height: 70px;
+    color:#fff;
     background: #E58172;
   }
   .cd-header .logo{
-    margin: 25px 0 0 5%;
+    color:#fff;
   }
 }
 .cd-main-nav {
@@ -257,6 +260,8 @@ blockquote p:last-child {
           transform:translateY(-100%);
 }
 .cd-header ul.is-visible{
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
   -webkit-transform:translateY(50px);
           transform:translateY(50px);
 }
@@ -266,27 +271,29 @@ blockquote p:last-child {
   line-height: 50px;
   padding-left: 5%;
   background: #fff;
-  border-top: 1px solid #453c3d;
   font-size: 12px;
   font-weight: 800;
   color: #777;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-@media only screen and(min-width: 768px){
+@media only screen and (min-width: 768px){
   .cd-main-nav{
     width:auto;
-    background: transparent;
+    height: auto;
+    background: none;
   }
   .cd-header ul{
     position: static;
-    height: 70px;
+    line-height: 50px;
     transform:translateY(0);
+  }
+  .cd-header ul.is-visible{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .cd-header ul a{
     display: inline-block;
-    height: 70px;
-    line-height: 70px;
     background: transparent;
     border:0;
     color:#fff;
@@ -296,6 +303,11 @@ blockquote p:last-child {
   background: #E58172;
   height: 250px;
   position: relative;
+}
+@media only screen and (min-width: 768px){
+  .cd-banner{
+    height: 420px;
+  }
 }
 .cd-banner .handing{
   position: absolute;
