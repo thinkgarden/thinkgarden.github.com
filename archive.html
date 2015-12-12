@@ -16,7 +16,8 @@ permalink: /archive/
 <div class="cd-banner">
   <div class="handing">
     <h1>Archive</h1>
-    <p>你看到的，是我练习千字文的所有文章</p>
+    <hr class="small">
+    <span class="sub-heading">问渠哪得清如许，为有源头活水来</span>
   </div>
 </div>
 <div class="all_posts">
@@ -31,7 +32,7 @@ permalink: /archive/
     {% assign post_year1 = post_year2 %}
     <h3>{{ post_year1 }}</h3>
   {% endif %}
-    <div class="post"><a href="{{ post.url }}" target="_self"> <span class="datetime">{{ post.date | date:'%m月%d日' }}</span> {{ post.title }} </a></div>
+    <div class="post"><span class="datetime">{{ post.date | date:'%m月%d日' }}</span><a href="{{ post.url }}" target="_self">  {{ post.title }} </a></div>
 {% endfor %}
 </div>
 

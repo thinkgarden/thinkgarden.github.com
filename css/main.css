@@ -327,6 +327,38 @@ blockquote p:last-child {
   max-width: 768px;
   text-align: center;
 }
+.handing h1{
+  font-size: 50px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+hr.small {
+    max-width: 100px;
+    margin: 15px auto;
+    border-width: 4px;
+    border-color: white;
+}
+.small {
+    font-size: 85%;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.sub-heading {
+    font-size: 20px;
+    line-height: 1.1;
+    display: block;
+    font-weight: 300;
+    margin: 10px 0 0;
+}
+@media only screen and (min-width: 768px){
+  .handing h1{
+    font-size: 65px;
+  }
+}
 .all_posts{
   margin:0 auto;
   padding: 0 15px;
