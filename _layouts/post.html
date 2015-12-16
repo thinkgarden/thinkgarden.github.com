@@ -1,22 +1,23 @@
 ---
-layout: default
+layout: page
 ---
-
-<div class="header">
-	<div class="container clearfix">
-      <ul class="nav">
-        <li class="current"><a href="/index.html">Blog</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="/about.html">About</a></li>
-      </ul>
-    </div>
-	<a class="logo" href="/index.html">慢鱼</a>
-</div>
-<div class="blog-banner">
-	<div class="post-header">
-		<h1 class="post-title f-white f20"> {{ page.title }} </h1>
-		<div class="author-date f12 f-white"> 慢鱼 {{ page.date | date:'%Y年%m月%d日' }} </div>
-	</div>
+<header class="cd-header clearfix fixed-top">
+  <a href="/index.html" class="logo">慢鱼的blog</a>
+  <nav class="cd-main-nav clearfix">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="/archive">ARCHIVE</a></li>
+      <li><a href="">CATAGROY</a></li>
+      <li><a href="/about">ABOUT</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="cd-banner">
+  <div class="handing">
+    <div class="tags">{{ page.tags }}</div>
+    <h1>{{ page.title }}</h1>
+    <span class="sub-heading">Posted by 慢鱼 {{ page.date | date:'%Y年%m月%d日' }}</span>
+  </div>
 </div>
 <div class="blog-wrapper">
 	<div class="container clearfix">
@@ -25,11 +26,11 @@ layout: default
 		</div>
 		<div class="bdsharebuttonbox mt20"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
      	 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-    
+
 	    <div class="post-area post comment">
 	      <!-- 多说评论框 start -->
 	      <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="thinkgarden.github.io{{ page.url }}"></div>
 	      <!-- 多说评论框 end -->
 	    </div>
 	</div>
-</div>	
+</div>

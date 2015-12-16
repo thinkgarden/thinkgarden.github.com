@@ -449,7 +449,7 @@ html {
   position: relative;
   margin-bottom: 15px;
   height: 40vh;
-  background: #fff url(/images/cd-background-2.jpg) center center no-repeat;
+  background: #222 url(/images/cd-background-2.jpg) center center no-repeat;
 }
 .main-header .scroll-down{
   display: none;
