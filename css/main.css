@@ -448,10 +448,19 @@ hr {
   width: 90%;
   max-width: 768px;
   text-align: left;
+  padding-top:50px;
 }
 @media only screen and (min-width: 768px){
   .cd-banner .post-handing{
     left:20%;
+  }
+}
+
+@media only screen and (min-width: 960px){
+  .cd-banner .post-handing{
+    left:50%;
+    -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
   }
 }
 .post-heading h1 {
@@ -995,7 +1004,7 @@ a.sidebar-nav-item:focus {
 
 .blog-wrapper{
   height: auto;
-  padding:0 0.5rem;
+  padding:1em 1em;
 }
 .blog-wrapper ul li{
   list-style:disc;
@@ -1004,7 +1013,6 @@ a.sidebar-nav-item:focus {
   padding: 0.3em 0.2em;
   font-size: 16px;
 }
-
 
 .author-date{
   line-height: 1;
