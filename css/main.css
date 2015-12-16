@@ -458,11 +458,12 @@ hr {
 
 @media only screen and (min-width: 960px){
   .cd-banner .post-handing{
+    top:50%;
     left:50%;
     padding-top: 0;
     text-align: center;
-    -webkit-transform:translateX(-50%);
-          transform:translateX(-50%);
+    -webkit-transform:translateY(-50%) translateX(-50%);
+          transform:translateY(-50%) translateX(-50%);
   }
 }
 .post-heading h1 {
