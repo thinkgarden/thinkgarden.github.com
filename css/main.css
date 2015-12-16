@@ -460,8 +460,9 @@ hr {
   .cd-banner .post-handing{
     left:50%;
     padding-top: 0;
-    -webkit-transform:translateY(-50%) translateX(-50%);
-          transform:translateY(-50%) translateX(-50%);
+    text-align: center;
+    -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
   }
 }
 .post-heading h1 {
