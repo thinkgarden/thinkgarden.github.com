@@ -1,6 +1,13 @@
----
-layout: page
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>慢鱼的blog</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="shortcut icon" href="/images/favicon.png">
+</head>
+<body>
 <header class="cd-header clearfix fixed-top">
   <a href="/index.html" class="logo">慢鱼的blog</a>
   <nav class="cd-main-nav clearfix">
@@ -13,10 +20,10 @@ layout: page
   </nav>
 </header>
 <div class="cd-banner">
-  <div class="handing">
+  <div class="post-handing">
     <div class="tags">{{ page.tags }}</div>
     <h1>{{ page.title }}</h1>
-    <span class="sub-heading">Posted by 慢鱼 {{ page.date | date:'%Y年%m月%d日' }}</span>
+    <span class="meta">Posted by 慢鱼 {{ page.date | date:'%Y年%m月%d日' }}</span>
   </div>
 </div>
 <div class="blog-wrapper">
@@ -34,3 +41,20 @@ layout: page
 	    </div>
 	</div>
 </div>
+<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/js/common.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"hygblog"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+</body>
+</html>

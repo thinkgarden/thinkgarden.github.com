@@ -409,7 +409,6 @@ hr {
   margin:0 auto;
   padding: 0 15px;
 }
-
 .all_posts .post{
   border:0;
   padding-left: 0.5em;
@@ -438,6 +437,31 @@ hr {
   .all_posts{
     width: 970px;
   }
+}
+/*post.css*/
+.cd-banner .post-handing{
+  position: absolute;
+  top:50%;
+  left:5%;
+  -webkit-transform:translateY(-50%);
+          transform:translateY(-50%);
+  width: 90%;
+  max-width: 768px;
+  text-align: left;
+}
+@media only screen and (min-width: 768px){
+  .cd-banner .post-handing{
+    left:20%;
+  }
+}
+.post-heading h1 {
+    font-size: 27px;
+}
+.post-heading .meta {
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px;
 }
 
 /*new index.css*/
