@@ -25,12 +25,7 @@ h4{
   margin-top: 0.5em;
   margin-bottom: 0.3em;
 }
-ul {
-  padding: 0;
-}
-li {
-  list-style: none;
-}
+
 
 img {
   border: none;
@@ -565,31 +560,31 @@ html {
 .post-list-wrapper .post:first-child {
     border-top: 1px solid #dcdce0;
 }
-.post{
+.post-list-wrapper .post{
   background-color: #fff;
-    border-left: 1px solid #dcdce0;
-    border-right: 1px solid #dcdce0;
-    border-bottom: 1px solid #dcdce0;
-    overflow: hidden;
-    position: relative;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
-    padding-bottom: 0.5em;
+  border-left: 1px solid #dcdce0;
+  border-right: 1px solid #dcdce0;
+  border-bottom: 1px solid #dcdce0;
+  overflow: hidden;
+  position: relative;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-bottom: 0.5em;
 }
 
-.post-title,
-.post-title a {
+.post-list-wrapper .post-title,
+.post-list-wrapper .post-title a {
   font-weight: 600;
   color:#313131;
 }
-.post-title {
+
+.post-list-wrapper .post-title {
   margin-top:1.2em ;
   margin-bottom: 0.1em;
   line-height: 1.2;
   transition: color .1s linear;
 }
-
-.post p {
+.post-list-wrapper .post p {
     margin-bottom: 0.3rem;
     overflow : hidden;
     text-overflow: ellipsis;
@@ -598,14 +593,14 @@ html {
     -webkit-box-orient: vertical;
 }
 
-
-.post p span{
+.post-list-wrapper .post p span{
   display: inline-block;
   min-width: 1.2em;
   margin-right: 0.8em;
   line-height: 1;
 }
-.tag{
+
+.post-list-wrapper .tag{
   background-color: #b1b2b2;
   border-radius: 4px;
   padding: 4px 8px;
