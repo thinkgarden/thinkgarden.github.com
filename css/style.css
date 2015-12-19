@@ -454,7 +454,73 @@ pre code {
   border-radius: 4px; }
 
 .highlight pre {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 14px; }
+
+@media only screen and (min-width: 768px) {
+  font-size: 16px; }
+
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #8e908c; }
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: #c82829; }
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: #f5871f; }
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+  color: #eab700; }
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #718c00; }
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+  color: #4271ae; }
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #8959a8; }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: white;
+  color: #4d4d4c;
+  padding: 0.5em; }
+
+.hljs-emphasis {
+  font-style: italic; }
+
+.hljs-strong {
+  font-weight: bold; }
 
 h3 {
   font-size: 1.3rem;
@@ -465,6 +531,50 @@ h4 {
   font-size: 1.2rem;
   margin-top: 0.5em;
   margin-bottom: 0.3em; }
+
+.post-list-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+  .post-list-wrapper .post {
+    border-left: 1px solid #dcdce0;
+    border-right: 1px solid #dcdce0;
+    border-bottom: 1px solid #dcdce0;
+    overflow: hidden;
+    position: relative;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-bottom: 0.5em; }
+    .post-list-wrapper .post .post-title {
+      font-weight: 600;
+      color: #313131;
+      margin-top: 1.2em;
+      margin-bottom: 0.1em;
+      line-height: 1.2;
+      -webkit-transition: color .1s linear;
+      transition: color .1s linear; }
+      .post-list-wrapper .post .post-title a {
+        font-weight: 600;
+        color: #313131; }
+    .post-list-wrapper .post p {
+      margin-bottom: 0.3rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
+    .post-list-wrapper .post span {
+      display: inline-block;
+      min-width: 1.2em;
+      margin-right: 0.8em;
+      line-height: 1; }
+    .post-list-wrapper .post .tag {
+      background-color: #b1b2b2;
+      border-radius: 4px;
+      padding: 4px 8px;
+      color: #fff; }
 
 .all_posts {
   margin: 0 auto;
