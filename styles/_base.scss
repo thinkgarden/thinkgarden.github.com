@@ -60,6 +60,9 @@ a, label, :focus {
 a, img, input {
   border: 0 none
 }
+img {
+  max-width: 100%;
+}
 button, input, select, textarea {
   font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
 }
