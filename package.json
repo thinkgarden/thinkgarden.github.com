@@ -1,0 +1,24 @@
+{
+  "name": "thinkgarden.github.com",
+  "version": "1.0.0",
+  "description": "慢鱼web开发工程师，写过java、php，爱好前端，现在正在利用业余时间学习前端知识.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkgarden/thinkgarden.github.com.git"
+  },
+  "author": "slowfish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thinkgarden/thinkgarden.github.com/issues"
+  },
+  "homepage": "https://github.com/thinkgarden/thinkgarden.github.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.1.1"
+  }
+}
