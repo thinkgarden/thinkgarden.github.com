@@ -8,6 +8,8 @@ layout: page
     <span class="sub-heading">若你喜欢怪人，其实我很美</span>
   </div>
 </div>
+<div class="blog-wrapper">
+<div class="container">
 ![最佳搭档](http://7xnaen.com1.z0.glb.clouddn.com/bestParter.jpg)
 ####大家好我是慢鱼，一个热爱生活的伪文艺程序员。
 
@@ -23,5 +25,7 @@ layout: page
 <ul class="tags">
 <li>慢节奏</li>  <li>爱折腾</li>  <li>篮球</li>  <li>户外</li>   <li>瘦</li>  <li>web前端</li>  <li>海淘</li>
 </ul>
+</div>
+</div>
 
 

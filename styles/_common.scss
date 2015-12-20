@@ -6,6 +6,27 @@ body {
   color: #333;
   background-color: #fff
 }
+.container{
+  max-width: 36rem;
+  margin: 0 auto;
+}
+@media only screen and (min-width:50rem){
+  .container{
+    max-width:48rem;
+  }
+}
+@media only screen and (min-width:50em){
+  .container {
+    max-width: 57rem;
+  }
+}
+
+@media only screen and (min-width:62em){
+  .container {
+    width: 60rem;
+  }
+}
+
 .main-header{
   background: #222;
   background-image: url("/images/cd-background-2.jpg");
