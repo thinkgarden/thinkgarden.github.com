@@ -1,6 +1,6 @@
 $(function  () {
-  $(".cd-header .cd-main-nav").on("click",function () {
-     $(this).children('ul').toggleClass('is-visible');
+  $(".cd-header .cd-main-nav").click(function (event) {
+    if($(event.target).is('.cd-header .cd-main-nav')) $(this).children('ul').toggleClass('is-visible');
   });
   // 向上滚动，显示菜单栏
   var minWidth = 1170;
