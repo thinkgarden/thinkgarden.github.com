@@ -477,67 +477,159 @@ pre code {
 @media only screen and (min-width: 768px) {
   font-size: 16px; }
 
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-  color: #8e908c; }
+.footer {
+  display: none; }
 
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-  color: #c82829; }
+.icon-wrapper {
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  width: 30em;
+  margin-bottom: 2em; }
 
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-  color: #f5871f; }
+.footer .icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  line-height: 4rem;
+  text-align: center;
+  float: left;
+  margin-left: 2rem;
+  font-size: 2em;
+  display: block; }
 
-/* Tomorrow Yellow */
-.hljs-attribute {
-  color: #eab700; }
+.icon.github {
+  background: #2196F3; }
 
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-  color: #718c00; }
+.icon.weibo {
+  background: #D32F2F; }
 
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-  color: #4271ae; }
+.icon.email {
+  background: #00BCD4; }
 
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #8959a8; }
+.footer a {
+  color: #fff; }
+
+@media (min-width: 50rem) {
+  .footer {
+    display: block; } }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -14rem;
+  width: 14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  font-family: 'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+  font-size: .875rem;
+  /* 15px */
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #50bcb6;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  .sidebar a {
+    font-weight: normal;
+    color: #fff; }
+  .sidebar .sidebar-item {
+    padding: 1rem; }
+    .sidebar .sidebar-item p:last-child {
+      margin-bottom: 0; }
+
+.sidebar-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent; }
+
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  display: none; }
+
+.sidebar-toggle {
+  float: right;
+  margin-right: 5%;
+  width: 44px;
+  height: 100%;
+  background: url(../images/cd-icon-menu.svg) no-repeat center center;
+  background-size: 44px 44px;
+  cursor: pointer; }
+
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.sidebar-toggle {
+  transition: -webkit-transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+
+#sidebar-checkbox:checked + .sidebar {
+  z-index: 10;
+  visibility: visible; }
+
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .wrap,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(-14rem);
+  transform: translateX(-14rem); }
 
 .hljs {
   display: block;
   overflow-x: auto;
-  background: white;
-  color: #4d4d4c;
-  padding: 0.5em; }
+  padding: 0.5em;
+  background: #23241f;
+  -webkit-text-size-adjust: none; }
 
-.hljs-emphasis {
+.hljs, .hljs-tag, .css .hljs-rules, .css .hljs-value, .aspectj .hljs-function, .css .hljs-function .hljs-preprocessor, .hljs-pragma {
+  color: #f8f8f2; }
+
+.hljs-strongemphasis, .hljs-strong, .hljs-emphasis {
+  color: #a8a8a2; }
+
+.hljs-bullet, .hljs-blockquote, .hljs-horizontal_rule, .hljs-number, .hljs-regexp, .alias .hljs-keyword, .hljs-literal, .hljs-hexcolor {
+  color: #ae81ff; }
+
+.hljs-tag .hljs-value, .hljs-code, .hljs-title, .css .hljs-class, .hljs-class .hljs-title:last-child {
+  color: #a6e22e; }
+
+.hljs-link_url {
+  font-size: 80%; }
+
+.hljs-strong, .hljs-strongemphasis {
+  font-weight: bold; }
+
+.hljs-emphasis, .hljs-strongemphasis, .hljs-class .hljs-title:last-child, .hljs-typename {
   font-style: italic; }
 
-.hljs-strong {
-  font-weight: bold; }
+.hljs-keyword, .ruby .hljs-class .hljs-keyword:first-child, .ruby .hljs-function .hljs-keyword, .hljs-function, .hljs-change, .hljs-winutils, .hljs-flow, .nginx .hljs-title, .tex .hljs-special, .hljs-header, .hljs-attribute, .hljs-symbol, .hljs-symbol .hljs-string, .hljs-tag .hljs-title, .hljs-value, .alias .hljs-keyword:first-child, .css .hljs-tag, .css .unit, .css .hljs-important {
+  color: #f92672; }
+
+.hljs-function .hljs-keyword, .hljs-class .hljs-keyword:first-child, .hljs-aspect .hljs-keyword:first-child, .hljs-constant, .hljs-typename, .css .hljs-attribute {
+  color: #66d9ef; }
+
+.hljs-variable, .hljs-params, .hljs-class .hljs-title, .hljs-aspect .hljs-title {
+  color: #f8f8f2; }
+
+.hljs-string, .css .hljs-id, .hljs-subst, .hljs-type, .ruby .hljs-class .hljs-parent, .hljs-built_in, .django .hljs-template_tag, .django .hljs-variable, .smalltalk .hljs-class, .django .hljs-filter .hljs-argument, .smalltalk .hljs-localvars, .smalltalk .hljs-array, .hljs-attr_selector, .hljs-pseudo, .hljs-addition, .hljs-stream, .hljs-envvar, .apache .hljs-tag, .apache .hljs-cbracket, .tex .hljs-command, .hljs-prompt, .hljs-link_label, .hljs-link_url {
+  color: #e6db74; }
+
+.hljs-comment, .hljs-javadoc, .hljs-annotation, .hljs-decorator, .hljs-pi, .hljs-doctype, .hljs-deletion, .hljs-shebang, .apache .hljs-sqbracket, .tex .hljs-formula {
+  color: #75715e; }
+
+.coffeescript .javascript, .javascript .xml, .tex .hljs-formula, .xml .javascript, .xml .vbscript, .xml .css, .xml .hljs-cdata, .xml .php, .php .xml {
+  opacity: 0.5; }
 
 h3 {
   font-size: 1.3rem;
