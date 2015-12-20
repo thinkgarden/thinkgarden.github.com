@@ -176,12 +176,8 @@ body {
 
 .main-header {
   background: #222;
-  background-image: url("/images/cd-background-2.jpg");
   position: relative;
-  height: 40vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
+  height: 40vh; }
   .main-header .scroll-down {
     display: none; }
   .main-header .vertical-handing {
@@ -216,11 +212,15 @@ body {
   font-weight: 400;
   font-family: "Merriweather",serif;
   letter-spacing: 0.01rem;
-  color: rgba(255, 255, 255, 0.8); }
+  color: #fff; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 780px) {
   .main-header {
-    min-height: 100%; }
+    min-height: 100%;
+    background-image: url("/images/cd-background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
   .main-header .scroll-down {
     display: inline-block;
     position: absolute;
