@@ -365,3 +365,122 @@ pre code {
 @media only screen and (min-width: 768px){
   font-size:16px;
 }
+
+.footer{
+  display: none;
+}
+.icon-wrapper{
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  width: 30em;
+  margin-bottom: 2em;
+}
+.footer .icon{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  line-height: 4rem;
+  text-align: center;
+  float: left;
+  margin-left: 2rem;
+  font-size: 2em;
+  display:block;
+
+
+}
+.icon.github {
+  background: #2196F3;
+}
+.icon.weibo {
+  background: #D32F2F;
+}
+.icon.email {
+  background: #00BCD4;
+}
+.footer a{
+  color: #fff;
+}
+@media(min-width: 50rem){
+  .footer{
+    display: block;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -14rem;
+  width: 14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  font-family: 'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+  font-size: .875rem; /* 15px */
+  color: rgba(255,255,255,.6);
+  background-color: #50bcb6;
+  transition: all .3s ease-in-out;
+  a {
+    font-weight: normal;
+    color: #fff;
+  }
+  .sidebar-item {
+    padding: 1rem;
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sidebar-nav {
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  display: none;
+}
+
+.sidebar-toggle {
+  float: right;
+  margin-right: 5%;
+  width: 44px;
+  height: 100%;
+  background: url(../images/cd-icon-menu.svg) no-repeat center center;
+  background-size: 44px 44px;
+  cursor: pointer;
+}
+
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.sidebar-toggle {
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+}
+#sidebar-checkbox:checked + .sidebar {
+  z-index: 10;
+  visibility: visible;
+}
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .wrap,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(-14rem);
+          transform: translateX(-14rem);
+}
+
+

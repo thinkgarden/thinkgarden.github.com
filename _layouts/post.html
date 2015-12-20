@@ -2,17 +2,7 @@
 <html lang="en">
 {% include head.html %}
 <body>
-<header class="cd-header clearfix fixed-top">
-  <a href="/index.html" class="logo">慢鱼的blog</a>
-  <nav class="cd-main-nav clearfix">
-    <ul>
-      <li><a href="/index.html">HOME</a></li>
-      <li><a href="/archive">ARCHIVE</a></li>
-      <li><a href="">CATAGROY</a></li>
-      <li><a href="/about">ABOUT</a></li>
-    </ul>
-  </nav>
-</header>
+{% include header.html %}
 <div class="cd-banner">
   <div class="post-handing">
     <div class="tags">{{ page.tags }}</div>
@@ -35,9 +25,9 @@
 	    </div>
 	</div>
 </div>
-<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
 <script src="/js/jquery-1.11.1.min.js"></script>
 <script src="/js/common.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
     var duoshuoQuery = {short_name:"hygblog"};
