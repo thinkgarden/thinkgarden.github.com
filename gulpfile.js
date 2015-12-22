@@ -13,7 +13,7 @@ gulp.task('imagemin', function(){
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest('images'));
+    .pipe(gulp.dest('dest/images'));
 });
 
 gulp.task('sass',function () {

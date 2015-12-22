@@ -242,13 +242,13 @@ body {
       font-weight: 700;
       line-height: 1.1;
     }
-    .sub-heading {
-      font-size: 16px;
-      line-height: 1.1;
-      display: block;
-      font-weight: 300;
-      margin: 10px 0 0;
-    }
+   }
+  .sub-heading {
+    font-size: 16px;
+    line-height: 1.1;
+    display: block;
+    font-weight: 300;
+    margin: 10px 0 0;
   }
   .post-intro{
     position: absolute;
@@ -270,6 +270,10 @@ body {
     .meta{
       font-size:32px;
       font-size: 2rem;
+      font-family: 'Open Sans',sans-serif;
+      font-weight: 300;
+      line-height:1.8;
+      font-style: italic;
     }
   }
 }
@@ -277,8 +281,14 @@ body {
 @media only screen and (min-width: 768px){
   .cd-banner{
     height: 360px;
+    .heading{
+      font-size:68px;
+    }
+    .sub-heading{
+      font-size:20px;
+    }
     .post-intro{
-      left:25%;
+      left:20%;
       h1{
         font-size:48px;
         font-size:3rem;
