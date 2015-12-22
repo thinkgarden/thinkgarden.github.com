@@ -224,6 +224,10 @@ body {
   height: 250px;
   position: relative;
   color:#fff;
+  &.theme{
+    background: #5a4b60;
+    background-size: cover;
+  }
   .handing{
     position: absolute;
     top:50%;
@@ -246,7 +250,7 @@ body {
       margin: 10px 0 0;
     }
   }
-  .post-handing{
+  .post-intro{
     position: absolute;
     top:50%;
     left:5%;
@@ -256,14 +260,29 @@ body {
     max-width: 768px;
     text-align: left;
     padding-top:50px;
+    h1{
+      font-size: 32px;
+      font-size: 2rem;
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+    .meta{
+      font-size:32px;
+      font-size: 2rem;
+    }
   }
 }
 
 @media only screen and (min-width: 768px){
   .cd-banner{
-    height: 420px;
-    .post-handing{
-      left:20%;
+    height: 360px;
+    .post-intro{
+      left:25%;
+      h1{
+        font-size:48px;
+        font-size:3rem;
+      }
     }
   }
 }
