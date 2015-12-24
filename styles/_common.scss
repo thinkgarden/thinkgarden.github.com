@@ -2,7 +2,7 @@ body,html {
     height: 100%;
 }
 body {
-  font: 16px/1.4 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, sans-serif;
+  font: 16px/1.8 'Helvetica Neue', 'Microsoft YaHei', Arial, 'Hiragino Sans GB', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
   color: #333;
   background-color: #fff
 }
@@ -10,12 +10,12 @@ body {
   max-width: 36rem;
   margin: 0 auto;
 }
-@media only screen and (min-width:50rem){
+@media only screen and (min-width:48rem){
   .container{
     max-width:48rem;
   }
 }
-@media only screen and (min-width:50em){
+@media only screen and (min-width:55em){
   .container {
     max-width: 57rem;
   }
@@ -360,32 +360,21 @@ blockquote p:last-child {
 }
 
 /*code*/
-code, pre {
-  font-family: 'Open Sans','Helvetica Neue', Helvetica, Tahoma, Arial, "Hiragino Sans GB", 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
-}
 code {
-  padding: .25em .5em;
-  color: #bf616a;
-  background-color: #f9f9f9;
-  border-radius: 3px;
+  font-family: Consolas, "Liberation Mono", Menlo, Monaco, Courier, monospace;
+  background-color: #f5f5f5;
 }
-pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f9f9f9;
-  font-size: 14px;
-}
+
 pre code {
-  padding: 0;
-  color: inherit;
-  background-color: transparent;
+  display: block;
+  margin: 0 0 15px 0;
+  padding: 8px;
+  border-radius: 2px;
+  overflow: auto;
+  line-height: 1.5;
+  font-size: .9em;
 }
+
 /* Pygments via Jekyll */
 .highlight {
   margin-bottom: 1rem;
@@ -393,10 +382,7 @@ pre code {
 }
 .highlight pre {
   margin-bottom: 0;
-  font-size:14px;
-}
-@media only screen and (min-width: 768px){
-  font-size:16px;
+  font-size:.9em;
 }
 
 .footer{
