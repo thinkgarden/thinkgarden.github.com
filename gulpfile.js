@@ -19,7 +19,9 @@ gulp.task('imagemin', function(){
 gulp.task('sass',function () {
   gulp.src('styles/*.scss')
       .pipe(sass())
-      .pipe(autoprefixer())
+      .pipe(autoprefixer({
+            browsers: ["Android 4.4", "iOS 7.1", "Chrome > 31", "ff > 31", "ie >= 10"]
+        }))
       .pipe(minify())
       .pipe(gulp.dest('css'))
 });
