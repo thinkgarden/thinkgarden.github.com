@@ -2,6 +2,13 @@ $(function  () {
   $(".cd-header .cd-main-nav").click(function (event) {
     if($(event.target).is('.cd-header .cd-main-nav')) $(this).children('ul').toggleClass('is-visible');
   });
+  var ua = window.navigator.userAgent;
+  if(ua.indexOf('iPhone') !== -1 && ua.indexOf('Safari') !== -1) {
+       setTimeout(function(){
+        // Hide the address bar!
+        window.scrollTo(0, 1);
+      }, 0);
+  }
   // 向上滚动，显示菜单栏
   var minWidth = 1170;
   if ($(window).width() > minWidth) {
