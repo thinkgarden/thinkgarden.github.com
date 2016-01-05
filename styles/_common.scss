@@ -3,8 +3,8 @@ body,html {
 }
 body {
   font: 16px/1.8 'Helvetica Neue', 'Microsoft YaHei', Arial, 'Hiragino Sans GB', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
-  color: #333;
-  background-color: #fff
+  color: #5A5858;
+  background-color: #FCFCFC
 }
 .container{
   max-width: 36rem;
@@ -28,7 +28,7 @@ body {
 }
 
 .main-header{
-  background: #222;
+  background: #3F51B5;
   position: relative;
   height: 40vh;
   .scroll-down{
@@ -436,7 +436,7 @@ pre code {
   font-family: 'Open Sans','Helvetica Neue',Arial,'Noto Sans S Chinese Thin','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
-  background-color: #50bcb6;
+  background-color: #FF9800;
   transition: all .3s ease-in-out;
   a {
     font-weight: normal;

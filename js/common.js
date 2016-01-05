@@ -1,4 +1,4 @@
-$(function  () {
+$(function () {
   $(".cd-header .cd-main-nav").click(function (event) {
     if($(event.target).is('.cd-header .cd-main-nav')) $(this).children('ul').toggleClass('is-visible');
   });
@@ -15,8 +15,7 @@ $(function  () {
       var navHeight = $(".cd-header").height();
       $(window).on("scroll", {
           previousTop: 0
-      },
-      function() {
+      }, function() {
           var scroll_top = $(window).scrollTop();
           // 只要向上滚动scroll_top就会小于previousTop
           scroll_top < this.previousTop ? scroll_top > 0 && $(".cd-header").hasClass("is-fixed") ? $(".cd-header").addClass("is-visible") : $(".cd-header").removeClass("is-visible is-fixed") : ($(".cd-header").removeClass("is-visible"), scroll_top > navHeight && !$(".cd-header").hasClass("is-fixed") && $(".cd-header").addClass("is-fixed")),
