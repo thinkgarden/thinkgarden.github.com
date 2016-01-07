@@ -22,6 +22,7 @@
     "gulp-imagemin": "^2.4.0",
     "gulp-minify-css": "^1.2.2",
     "gulp-sass": "^2.1.1",
-    "imagemin-pngquant": "^4.2.0"
+    "imagemin-pngquant": "^4.2.0",
+    "node-sass": "^3.4.2"
   }
 }

@@ -28,7 +28,7 @@ body {
 }
 
 .main-header{
-  background: #3F51B5;
+  background: $accent-color;
   position: relative;
   height: 40vh;
   .scroll-down{
@@ -114,7 +114,7 @@ body {
 @media only screen and (min-width: 768px){
   .cd-header{
     color:#fff;
-    background: $primary-color;
+    background: $accent-color;
     .logo{
       color:#fff;
       &:hover,&:focus{
@@ -225,7 +225,7 @@ body {
   position: relative;
   color:#fff;
   &.theme{
-    background: #5a4b60;
+    background: $accent-color;
     background-size: cover;
   }
   .handing{
