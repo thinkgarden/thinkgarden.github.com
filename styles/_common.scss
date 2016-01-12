@@ -7,24 +7,9 @@ body {
   background-color: #FCFCFC
 }
 .container{
-  max-width: 36rem;
+  width:90%;
+  max-width: 768px;
   margin: 0 auto;
-}
-@media only screen and (min-width:48rem){
-  .container{
-    max-width:48rem;
-  }
-}
-@media only screen and (min-width:55em){
-  .container {
-    max-width: 57rem;
-  }
-}
-
-@media only screen and (min-width:62em){
-  .container {
-    width: 60rem;
-  }
 }
 
 .main-header{
@@ -348,14 +333,22 @@ blockquote p:last-child {
 }
 
 .blog-wrapper{
-  height: auto;
-  padding:1em 1em;
+  position: relative;
+  min-height: 100%;
+  padding: 4em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  z-index: 2;
   ul li{
     list-style:disc;
   }
   p{
     padding: 0.3em 0.2em;
     font-size: 16px;
+  }
+  @media(min-width:800px){
+    background:#e8e8e8;
   }
 }
 
