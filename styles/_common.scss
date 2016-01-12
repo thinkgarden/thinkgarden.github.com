@@ -336,19 +336,22 @@ blockquote p:last-child {
   position: relative;
   min-height: 100%;
   padding: 4em 0;
-  line-height: 1.6;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   background: #fff;
-  z-index: 2;
+  color:#000;
   ul li{
     list-style:disc;
   }
   p{
     padding: 0.3em 0.2em;
-    font-size: 16px;
+    font-size: 14px;
   }
   @media(min-width:800px){
     background:#e8e8e8;
+    .container{
+      background:#fff;
+      padding:30px;
+      box-shadow: 0 2px 6px #ccc;
+    }
   }
 }
 
