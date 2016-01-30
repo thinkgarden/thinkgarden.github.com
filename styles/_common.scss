@@ -338,6 +338,9 @@ blockquote p:last-child {
   padding: 4em 0;
   background: #fff;
   color:#000;
+  ul {
+    margin-left:20px;
+  }
   ul li{
     list-style:disc;
   }
