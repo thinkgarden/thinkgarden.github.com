@@ -1,31 +1,23 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var minify = require('gulp-minify-css');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var atImport = require('postcss-import');
+var mqpacker = require('css-mqpacker');
+var cssnano = require('cssnano');
 
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
 
-gulp.task('imagemin', function(){
-  return gulp.src('images/*')
-    .pipe(imagemin({
-      progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
-      use: [pngquant()]
-    }))
-    .pipe(gulp.dest('dest/images'));
+gulp.task('css', function () {
+  var processors = [
+    atImport,
+    require('postcss-simple-vars')({ silent: true }),
+    require('postcss-nested') ,
+    autoprefixer,
+    mqpacker,
+    cssnano
+  ];
+  return gulp.src('./styles/style.css')
+    .pipe(postcss(processors))
+    .pipe(gulp.dest('css'));
 });
 
-gulp.task('sass',function () {
-  gulp.src('styles/*.scss')
-      .pipe(sass())
-      .pipe(autoprefixer({
-            browsers: ["Android 4.4", "iOS 7.1", "Chrome > 31", "ff > 31", "ie >= 10"]
-        }))
-      .pipe(minify())
-      .pipe(gulp.dest('css'))
-});
 
-gulp.task('watch', function () {
-  gulp.watch('styles/*.scss', ['sass']);
-})

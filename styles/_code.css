@@ -1,13 +1,23 @@
+pre{
+  /*background: rgba(204,204,204,0.1);*/
+  padding:9.5px;
+  word-wrap:break-word;
+  word-break:break-all;
+  color: #333;
+}
+
+
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #23241f;
+  background: rgba(204,204,204,0.1);
+  color:#333;
   -webkit-text-size-adjust: none
 }
 
 .hljs,.hljs-tag,.css .hljs-rules,.css .hljs-value,.aspectj .hljs-function,.css .hljs-function .hljs-preprocessor,.hljs-pragma {
-  color: #f8f8f2
+  color: #ccc
 }
 
 .hljs-strongemphasis,.hljs-strong,.hljs-emphasis {
@@ -19,7 +29,7 @@
 }
 
 .hljs-tag .hljs-value,.hljs-code,.hljs-title,.css .hljs-class,.hljs-class .hljs-title:last-child {
-  color: #a6e22e
+  color: #ccc;
 }
 
 .hljs-link_url {
@@ -43,7 +53,7 @@
 }
 
 .hljs-variable,.hljs-params,.hljs-class .hljs-title,.hljs-aspect .hljs-title {
-  color: #f8f8f2
+  color: #333
 }
 
 .hljs-string,.css .hljs-id,.hljs-subst,.hljs-type,.ruby .hljs-class .hljs-parent,.hljs-built_in,.django .hljs-template_tag,.django .hljs-variable,.smalltalk .hljs-class,.django .hljs-filter .hljs-argument,.smalltalk .hljs-localvars,.smalltalk .hljs-array,.hljs-attr_selector,.hljs-pseudo,.hljs-addition,.hljs-stream,.hljs-envvar,.apache .hljs-tag,.apache .hljs-cbracket,.tex .hljs-command,.hljs-prompt,.hljs-link_label,.hljs-link_url {

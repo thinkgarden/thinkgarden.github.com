@@ -1,6 +1,6 @@
-@import 'base';
-@import 'common';
-@import 'code';
+@import 'normalize.css';
+@import '_common.css';
+@import '_code.css';
 h3{
   font-size: 1.3rem;
   margin-top: 0.5em;
