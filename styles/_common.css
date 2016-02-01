@@ -390,7 +390,9 @@ blockquote p:last-child {
   background: #fff;
   color:#000;
   ul {
-    margin-left:10px;
+    width:80%;
+    max-width: 700px;
+    margin:auto;
   }
   ul li{
     list-style:disc;
