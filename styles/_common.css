@@ -409,6 +409,9 @@ blockquote p:last-child {
       padding:30px;
       box-shadow: 0 2px 6px #ccc;
     }
+    ul{
+      width: 90%;
+    }
   }
 }
 
