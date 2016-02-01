@@ -28,6 +28,27 @@ html * {
 .clearfix {
   *zoom: 1;
 }
+html, body, h1, h2, h3, h4, h5, h6, blockquote, p,
+pre, dl, dd, ol, ul, li, a, span, caption, th, td,
+form, fieldset, legend, input, button, textarea, address {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%
+}
+ol, ul {
+  list-style: none
+}
+li {
+  list-style: none;
+}
+fieldset, img {
+  border: 0
+}
+a{
+  text-decoration: none;
+}
 body,html {
     height: 100%;
 }
