@@ -17,7 +17,7 @@ pre{
 }
 
 .hljs,.hljs-tag,.css .hljs-rules,.css .hljs-value,.aspectj .hljs-function,.css .hljs-function .hljs-preprocessor,.hljs-pragma {
-  color: #ccc
+  color: #333;
 }
 
 .hljs-strongemphasis,.hljs-strong,.hljs-emphasis {
@@ -29,7 +29,7 @@ pre{
 }
 
 .hljs-tag .hljs-value,.hljs-code,.hljs-title,.css .hljs-class,.hljs-class .hljs-title:last-child {
-  color: #ccc;
+  color: #333;
 }
 
 .hljs-link_url {
