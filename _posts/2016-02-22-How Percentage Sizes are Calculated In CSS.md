@@ -108,7 +108,8 @@ There is just one more thing we need to do. Your body element will often contain
 
 This will ensure your body element's size grows along with the content inside it. If you have no content in your body element, the body will take up all the space available to it anyway.
 
-###结论
+### 结论
+
 元素的高度除了取决于自身的height外还受包裹其本身的父元素的高度决定，虽然body的height是100%，但包裹其的父元素html的高度为auto，所以body得最大高度也为auto。
 
 * Default Browser Settings -- if viewport is greater than the content, the body does not fill the screen
@@ -116,3 +117,7 @@ This will ensure your body element's size grows along with the content inside it
 * html{height: auto}, body { height: 100%; } -- if content is greater than the viewport, body seems to only be the height of the viewport
 
 为了更好的说明请看[codepen的例子](http://codepen.io/slowfish/pen/NxZwBO)
+
+---
+本文参考自[@ Kirupa Chinnathambi 的 Make <body> Take Up 100% of the Browser Height
+](https://www.kirupa.com/html5/make_body_take_up_full_browser_height.htm)
