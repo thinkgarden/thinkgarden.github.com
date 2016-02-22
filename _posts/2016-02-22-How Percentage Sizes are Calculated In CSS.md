@@ -13,7 +13,8 @@ tags: [web前端]
 * The body element is (by default) position:static, which means that positioned children of it are positioned relative to the html element's coordinate system.
 * In almost all modern browsers, the built-in offset from the edge of the page is applied through a margin on the body element, not padding on the html element.
 
-###Make <body> Take Up 100% of the Browser Height
+### Make <body> Take Up 100% of the Browser Height
+
 what I wanted to do was make the body element take up the full height of the page.
 
     body {
