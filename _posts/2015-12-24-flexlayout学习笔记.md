@@ -10,8 +10,6 @@ tags: [web前端]
 
 ### flexbox 优势太明显
 
-Peter 本人其实非常喜欢折腾 CSS 的，对 float position 等各种排版技巧也算是很熟练了，我几乎可以默写出 clearfix 的那几行 CSS 来。但是，用上了 flexbox 才发现，原来的日子还是太不方便了。这也难怪 flexbox 不就是发明出来，解决原来那些布局中的痛苦的嘛？而且 flexbox 还有专门的适合响应式设计的各项功能。
-
 那么总体来讲，Flexbox 到底解决了哪些以前 CSS 没能解决好的问题呢? 参考 [https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) 。
 
 
@@ -31,7 +29,7 @@ Peter 本人其实非常喜欢折腾 CSS 的，对 float position 等各种排�
         display:inline-flex;
     }
 
-####容器样式
+#### 容器样式
 
     .box{
         flex-direction: row | row-reverse | column | column-reverse;
