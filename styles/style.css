@@ -103,8 +103,9 @@
 }
 
 /*demo.css*/
-.post_area{
+.post-area{
   margin-top: 60px;
+  word-break:break-all;
 }
 @media(min-width: 992px){
   #fall ul{
