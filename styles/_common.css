@@ -15,6 +15,34 @@ html * {
   box-sizing: border-box;
 }
 
+html, body, h1, h2, h3, h4, h5, h6, blockquote, p,
+pre, dl, dd, ol, ul, li, a, span, caption, th, td,
+form, fieldset, legend, input, button, textarea, address {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%
+}
+ol, ul {
+  list-style: none
+}
+li {
+  list-style: none;
+}
+fieldset, img {
+  border: 0
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+body,html {
+    height: 100%;
+}
+
 .clearfix::before,
 .clearfix::after {
   content: " ";
@@ -49,38 +77,22 @@ html * {
 .f22{
   font-size: 22px;
 }
-html, body, h1, h2, h3, h4, h5, h6, blockquote, p,
-pre, dl, dd, ol, ul, li, a, span, caption, th, td,
-form, fieldset, legend, input, button, textarea, address {
-  margin: 0;
-  padding: 0;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%
-}
-ol, ul {
-  list-style: none
-}
-li {
-  list-style: none;
-}
-fieldset, img {
-  border: 0
-}
-a{
-  text-decoration: none;
-}
-img{
-  max-width: 100%;
-}
-body,html {
-    height: 100%;
-}
 body {
   font: 16px/1.8 'Helvetica Neue', 'Microsoft YaHei', Arial, 'Hiragino Sans GB', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
   color: #5A5858;
   background-color: #FCFCFC
 }
+h3{
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+}
+h4{
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+}
+
 .container{
   width:90%;
   max-width: 768px;

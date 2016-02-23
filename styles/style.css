@@ -1,16 +1,6 @@
 @import 'normalize.css';
 @import '_common.css';
 @import '_code.css';
-h3{
-  font-size: 1.3rem;
-  margin-top: 0.5em;
-  margin-bottom: 0.3em;
-}
-h4{
-  font-size: 1.2rem;
-  margin-top: 0.5em;
-  margin-bottom: 0.3em;
-}
 .post-list-wrapper{
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -110,4 +100,60 @@ h4{
     font-style: italic;
     font-weight: 300;
     font-size: 17px;
+}
+
+/*demo.css*/
+.post_area{
+  margin-top: 60px;
+}
+@media(min-width: 992px){
+  #fall ul{
+    margin: 0 10px;
+    padding: 0;
+    width: 210px;
+    /*background-color: red;*/
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media(min-width: 1200px){
+  #fall ul{
+    width: 240px;
+  }
+}
+
+#fall li{
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6),0 0 20px rgba(0,0,0,0.1) inset;
+  transition: 0.1s ease-out;
+}
+
+#fall li:hover{
+  box-shadow: 0 0 12px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.1) inset;
+  transform: scale(1.05);
+}
+
+#fall .head {
+  font-size: 16px;
+  text-align: left;
+  margin: 0 10px;
+  padding: 10px 0 5px 0;
+  border-bottom: 1px dotted #ddd;
+  font-weight: bold;
+}
+
+#fall .description {
+  text-align: left;
+  padding: 5px 10px 10px 10px;
+  text-indent: 2em;
+}
+
+.demo img{
+  max-width: 100%;
+  vertical-align: middle;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
 }
