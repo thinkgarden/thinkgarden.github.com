@@ -2,7 +2,7 @@
 layout: page
 permalink: /demo/
 ---
-<div class="all_demos">
+<div class="container clearfix">
   <ul>
     <li>
       <a href="http://thinkgarden.github.io/sike-react-startkit/" target="_blank">
