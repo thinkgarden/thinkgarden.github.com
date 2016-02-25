@@ -1,6 +1,13 @@
 @import 'normalize.css';
 @import '_common.css';
 @import '_code.css';
+.cd-header.home{
+  background: #fff;
+}
+
+.cd-header.home a{
+  color:#727272;
+}
 
 .home{
   position: absolute;
@@ -62,52 +69,7 @@
   text-transform: uppercase;
 }
 
-.post-list-wrapper{
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  .post{
-    border-left: 1px solid #dcdce0;
-    border-right: 1px solid #dcdce0;
-    border-bottom: 1px solid #dcdce0;
-    overflow: hidden;
-    position: relative;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
-    padding-bottom: 0.5em;
-    .post-title{
-      font-weight: 600;
-      color:#313131;
-      margin-top:1.2em ;
-      margin-bottom: 0.1em;
-      line-height: 1.2;
-      transition: color .1s linear;
-      a{
-        font-weight: 600;
-        color:#313131;
-      }
-    }
-    p {
-      margin-bottom: 0.3rem;
-      overflow : hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
-    span{
-      display: inline-block;
-      min-width: 1.2em;
-      margin-right: 0.8em;
-      line-height: 1;
-    }
-     .tag{
-      background-color: #b1b2b2;
-      border-radius: 4px;
-      padding: 4px 8px;
-      color:#fff;
-    }
-  }
-}
+
 .all_posts{
   margin:0 auto;
   padding: 0 15px;
