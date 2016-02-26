@@ -33,11 +33,12 @@
 }
 
 .app-header .navBar a:hover{
-  opacity: 0.85;
+  opacity: 0.8;
+  font-size: 15px;
 }
 
 .app-header .navBar .fa{
-  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .app-header li{
@@ -48,6 +49,7 @@
   display: block;
   color:#727272;
   width: 130px;
+  font-size: 14px;
   line-height: 64px;
   text-align: center;
   font-weight: 500;
@@ -104,6 +106,10 @@
   text-transform: uppercase;
 }
 
+.home button:hover {
+  background-color: #536DFE;
+}
+
 .about{
   text-align: center;
   font-size: 17px;
@@ -125,7 +131,7 @@
   margin-top: -85px;
   padding: 5px;
   border:1px solid #fafafa;
-  border-radius: 50;
+  border-radius: 50%;
 }
 
 .about h2{

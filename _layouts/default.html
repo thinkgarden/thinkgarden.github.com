@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>慢鱼的blog</title>
+	<title>To be a 手艺人</title>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="/images/favicon.png">
@@ -12,15 +12,44 @@
 	<div class="app-container">
 		<div class="app-header">
 	    <ul class="navBar">
-	      <li><a href="/index.html"><i class="fa fa-home"></i>HOME</a></li>
+	      <li><a href="/index"><i class="fa fa-home"></i>Home</a></li>
 	      <li><a href="/archive"><i class="fa fa-book"></i>Blog</a></li>
-	      <li><a href="/demo"><i class="fa fa-diamons"></i>Work</a></li>
+	      <li><a href="/demo"><i class="fa fa-diamond"></i>Work</a></li>
 	      <li><a href="/about"><i class="fa fa-user"></i>Me</a></li>
 	    </ul>
 	  </div>
-
 		{{	content	}}
+		<script src="/js/jquery-1.11.1.min.js"></script>
+		<script>
+			$(".app-header a").each(function () {
+			  var path = document.location.pathname.split('/');
+			  var page = path[path.length -1];
+			  var href = $(this).attr('href');
+			  if(href === page){
+			    $(this).addClass('active');
+			    return false;
+			  }
+			});
 
+			$(".sidebar a").each(function(){
+			  var path = document.location.pathname.split('/');
+			  var page = path[path.length - 1];
+			  var href = $(this).attr("href");
+			  if (href === page) {
+			    $(this).addClass("active");
+			    return false;
+			  }
+			});
+
+			window.addEventListener("load",function() {
+			  // Set a timeout...
+			  setTimeout(function(){
+			    // Hide the address bar!
+			    window.scrollTo(0, 1);
+			  }, 0);
+			});
+
+		</script>
 	</div>
 </body>
 </html>
