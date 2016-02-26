@@ -1,12 +1,35 @@
 @import 'normalize.css';
 @import '_common.css';
 @import '_code.css';
-.cd-header.home{
-  background: #fff;
+.app-container{
+  height: 100%vh;
+  display: flex;
+  flex-direction:column;
 }
 
-.cd-header.home a{
+.app-header{
+  height: 64px;
+  background-color: #fff;
+  flex-shrink:0;
+}
+
+.app-header .navBar{
+  position: absolute;
+  right: 60px;
+  width: 520px;
+  height: 64px;
+}
+
+.app-header li{
+  display: inline-block;
+}
+
+.app-header li a{
+  display: block;
   color:#727272;
+  width: 130px;
+  line-height: 64px;
+  text-align: center;
 }
 
 .home{
@@ -49,6 +72,10 @@
   font-weight: 700;
   margin-bottom: 15px;
   margin-top: 0;
+}
+
+.home .title .name {
+    color: #00bcd4;
 }
 
 .home .subtitle {
