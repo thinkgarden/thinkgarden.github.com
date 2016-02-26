@@ -8,15 +8,17 @@
 }
 
 .app-header{
+  position: relative;
+  width: 100%;
   height: 64px;
   background-color: #fff;
   flex-shrink:0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
 }
 
 .app-header .navBar{
   position: absolute;
   right: 60px;
-  width: 520px;
   height: 64px;
 }
 
@@ -30,37 +32,25 @@
   width: 130px;
   line-height: 64px;
   text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.app-header li a.active{
+  border-bottom: 4px solid #ff4081;
 }
 
 .home{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../images/home-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  background: url("../images/home-bg.jpg") no-repeat fixed center center/cover;
+  height: calc(100vh - 64px);
 }
 
 .home .overlay {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
   text-align: center;
