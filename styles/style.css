@@ -16,6 +16,16 @@
   box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
 }
 
+.content{
+  background-color: #fafafa;
+  position: relative;
+  font-size: 16px;
+  font-family: Arial, Helvetica;
+  line-height: 1.8;
+  overflow-y: scroll;
+  flex-grow:1;
+}
+
 .app-header .navBar{
   position: absolute;
   right: 60px;
@@ -85,6 +95,64 @@
   border-radius: 2px;
   text-transform: uppercase;
 }
+
+.about{
+  text-align: center;
+  font-size: 17px;
+}
+
+.about .background{
+  background: #fff url("../images/banner.jpg") no-repeat center center/cover;
+  height: 260px;
+  margin-bottom: 10px;
+}
+
+.about .avatar{
+  display: block;
+  background-color: #fafafa;
+  width: 150px;
+  height: 150px;
+  margin:0 auto;
+  margin-top: -85px;
+  padding: 5px;
+  border:1px solid #fafafa;
+  border-radius: 50;
+}
+
+.about h2{
+  width: 240px;
+  margin: 35px auto;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: #E91E63;
+  line-height: 1.5;
+  border-bottom: 5px solid #C2185B;
+}
+
+.about .email {
+  margin-bottom: 10px;
+}
+
+.about .weixin {
+    margin-bottom: 24px;
+}
+
+.about .social li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #536DFE;
+}
+
+.about .social i {
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+  }
 
 
 .all_posts{
