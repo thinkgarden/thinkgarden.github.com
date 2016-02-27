@@ -1,6 +1,4 @@
 pre{
-  /*background: rgba(204,204,204,0.1);*/
-  padding:9.5px;
   word-wrap:break-word;
   word-break:break-all;
   color: #333;
@@ -10,7 +8,7 @@ pre{
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
+  padding: 1em;
   background: rgba(204,204,204,0.1);
   color:#333;
   -webkit-text-size-adjust: none
