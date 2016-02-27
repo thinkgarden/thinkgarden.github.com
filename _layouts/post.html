@@ -1,32 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
+<<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To be a 手艺人</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+</head>
 <body>
-{% include header.html %}
-<div class="cd-banner theme">
-  <div class="post-intro">
-    <h1>{{ page.title }}</h1>
-    <p class="meta"> {{ page.date |  date: '%B %d, %Y'  }}</p>
-  </div>
-</div>
-<div class="blog-wrapper">
-	<div class="container clearfix">
-		<div>
-		{{ content }}
-		</div>
-		<div class="bdsharebuttonbox mt20"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
-     	 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
-	    <div class="post-area post comment">
-	      <!-- 多说评论框 start -->
-	      <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="thinkgarden.github.io{{ page.url }}"></div>
-	      <!-- 多说评论框 end -->
-	    </div>
-	</div>
+<div class="app-container">
+    <a href="#" class="hamburger"><i class="fa fa-bars"></i></a>
+    <div class="sidebar">
+      <a class="title" href="/index">To be a Artisan</a>
+      <ul>
+        <li><a href="/index">首页</a></li>
+        <li><a href="/blog">博客</a></li>
+        <li><a href="/work">工作</a></li>
+        <li><a href="/about">关于</a></li>
+      </ul>
+    </div>
+    <div class="ui-mask"></div>
+    <div class="app-header">
+      <ul class="navBar">
+        <li><a href="/index"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="/blog"><i class="fa fa-book"></i>Blog</a></li>
+        <li><a href="/work"><i class="fa fa-diamond"></i>Work</a></li>
+        <li><a href="/about"><i class="fa fa-user"></i>Me</a></li>
+      </ul>
+    </div>
+    <div class="post-page">
+      <div class="post-hero">
+        <div class="title">{{ page.title }}</div>
+        <div class="date">{{ page.date | date: "%Y年%m月%d日" }}</div>
+      </div>
+      <div className="post-content container">
+        {{ content }}
+        <div class="bdsharebuttonbox mt20"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+       <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+        <div class="post-area post comment">
+          <!-- 多说评论框 start -->
+          <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="thinkgarden.github.io{{ page.url }}"></div>
+          <!-- 多说评论框 end -->
+        </div>
+
+      </div>
+    </div>
 </div>
+<script src="/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
+    $('.hamburger').click(function(){
+      $('body').css('overflow', 'hidden');
+      $('.sidebar').addClass('show');
+      $('.ui-mask').addClass('show');
+    });
+
+    $('.ui-mask').click(function(){
+      $('body').css('overflow', 'auto');
+      $('.sidebar').removeClass('show');
+      $(this).removeClass('show');
+    });
+
+    window.addEventListener("load",function() {
+      // Set a timeout...
+      setTimeout(function(){
+        // Hide the address bar!
+        window.scrollTo(0, 1);
+      }, 0);
+    });
     var duoshuoQuery = {short_name:"slowfish"};
     (function() {
       var ds = document.createElement('script');
