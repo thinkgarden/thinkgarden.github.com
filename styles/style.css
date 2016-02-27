@@ -5,15 +5,75 @@
   height: 100%vh;
   display: flex;
   flex-direction:column;
+  position: relative;
 }
 
 .app-header{
-  position: relative;
-  width: 100%;
-  height: 64px;
+  display: none;
+}
+
+.hamburger{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  transition: background-color .5s;
+  cursor: pointer;
+}
+a.hamburger i {
+  font-size: 20px;
+  color: white;
+}
+.sidebar {
+  width: 250px;
   background-color: #fff;
-  flex-shrink:0;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  transform: translateX(-250px);
+  transition: transform .5s;
+}
+
+.sidebar.show{
+  transform: translateX(0);
+}
+
+.sidebar ul {
+  padding-top: 30px;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: .4em;
+  text-align: center;
+  transition: all .3s ease-out;
+  text-decoration: none;
+  color: gray;
+}
+
+.sidebar ul li a:hover {
+  background-color: #6eefff;
+}
+
+@media(min-width: 768px){
+  .hamburger{
+    display: none;
+  }
+  .app-header{
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background-color: #fff;
+    flex-shrink:0;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
+  }
 }
 
 .content{
