@@ -78,6 +78,7 @@ a.hamburger i {
   display: block;
 }
 .sidebar .title{
+  display: block;
   cursor: pointer;
   font-size: 24px;
   color: #fff;
@@ -89,13 +90,14 @@ a.hamburger i {
   margin-bottom: 8px;
 }
 .sidebar ul li a {
+  font-family: Roboto, sans-serif;
   display: block;
-  padding: 13px;
-  text-align: center;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
   transition: all .3s ease-out;
   text-decoration: none;
   color: #727272;
-  text-transform: uppercase;
 }
 
 .sidebar ul li a:hover {
