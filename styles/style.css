@@ -350,6 +350,7 @@ a.hamburger i {
     width: calc(33.3333% - 40px);
   }
 }
+
 .blog{
   width: 100%;
   padding: 1em;

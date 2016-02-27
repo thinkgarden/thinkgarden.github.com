@@ -1,16 +1,9 @@
 ---
-layout: page
+layout: default
 permalink: /blog
 ---
-<div class="cd-banner">
-  <div class="handing">
-    <h1>Archive</h1>
-    <hr class="small">
-    <span class="sub-heading">问渠哪得清如许，为有源头活水来</span>
-  </div>
-</div>
-<div class="all_posts">
-
+<div class="content">
+<section class="blog">
 {% assign post_year1 = "" %}
 
 {% for post in site.posts %}
@@ -23,6 +16,7 @@ permalink: /blog
   {% endif %}
     <div class="post"><span class="datetime">{{ post.date | date:'%m月%d日' }}</span><a href="{{ post.url }}" target="_self">  {{ post.title }} </a></div>
 {% endfor %}
+</section>
 </div>
 
 
