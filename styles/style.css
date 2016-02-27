@@ -211,6 +211,10 @@ a.hamburger i {
   font-size: 15px;
 }
 
+.about h2, .about .hobby, .about .email, .about .weixin, .about .social {
+  margin-left: 16px;
+}
+
 .about .background{
   background: #fff url("../images/beauty.jpg") no-repeat center center/cover;
   height: 260px;
@@ -300,19 +304,18 @@ a.hamburger i {
   padding: 16px;
 }
 
-.work a{
+.work .card{
   display: block;
-}
-
-.work .card {
-  transition: all 450ms ease;
-  background-color: #FFF;
-  text-align: center;
+  width: 100%;
   padding: 10px;
   margin: 20px 0;
-  width: 100%;
+  background-color: #FFF;
+  text-align: center;
+  color:#727272;
+  transition: all 450ms ease;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
+
 .work .card:hover {
   cursor: pointer;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.24);
@@ -337,7 +340,7 @@ a.hamburger i {
     flex-wrap:wrap;
     flex-direction:row;
   }
-  .course .card {
+  .work .card {
     margin: 20px;
     width: calc(50% - 40px);
   }
@@ -347,40 +350,39 @@ a.hamburger i {
     width: calc(33.3333% - 40px);
   }
 }
-.all_posts{
-  margin:0 auto;
-  padding: 0 15px;
-  .post{
-    border:0;
-    padding-left: 0.5em;
-    padding-bottom: 0.5em;
-    .datetime{
-      display: inline-block;
-      padding-right: 0.3em;
-    }
-    a{
-      color: #404040;
-      &:hover{
-        color:#337ab7;
-        text-decoration: underline;
-      }
-    }
-  }
+.blog{
+  width: 100%;
+  padding: 1em;
 }
 
-@media only screen and (min-width: 768px){
-  .all_posts{
-    margin:0 auto;
+.blog .post{
+  width: 90%;
+  margin:0 auto;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
+.blog .datetime{
+  display: inline-block;
+  padding-right: 0.3em;
+}
+
+
+.blog a{
+  color: #404040;
+}
+
+.blog a:hover{
+  color:#337ab7;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 780px){
+  .post{
     padding: 0 15px;
     width: 750px;
   }
 }
 
-@media only screen and(min-width: 992px){
-  .all_posts{
-    width: 970px;
-  }
-}
 
 /*post.css*/
 @media only screen and (min-width: 960px){
