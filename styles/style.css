@@ -9,10 +9,25 @@
 }
 
 .app-header{
-  display: none;
+  position: relative;
+  width: 100%;
+  height: 64px;
+  background-color: #00bcd4;
+  flex-shrink:0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
 }
 
-.hamburger{
+.content{
+  position: relative;
+  background-color: #fafafa;
+  font-size: 16px;
+  font-family: Arial, Helvetica;
+  line-height: 1.8;
+  overflow-y: scroll;
+  flex-grow:1;
+}
+
+a.hamburger{
   position: absolute;
   top: 10px;
   left: 10px;
@@ -25,6 +40,10 @@
   transition: background-color .5s;
   cursor: pointer;
 }
+a.hamburger:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
 a.hamburger i {
   font-size: 20px;
   color: white;
@@ -40,11 +59,23 @@ a.hamburger i {
   transform: translateX(-250px);
   transition: transform .5s;
 }
-
 .sidebar.show{
   transform: translateX(0);
 }
+.ui-mask {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  display: none;
+}
 
+.ui-mask.show {
+  display: block;
+}
 .sidebar ul {
   padding-top: 30px;
 }
@@ -62,49 +93,18 @@ a.hamburger i {
   background-color: #6eefff;
 }
 
-@media(min-width: 768px){
-  .hamburger{
-    display: none;
-  }
-  .app-header{
-    position: relative;
-    width: 100%;
-    height: 64px;
-    background-color: #fff;
-    flex-shrink:0;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
-  }
-}
-
-.content{
-  background-color: #fafafa;
-  position: relative;
-  font-size: 16px;
-  font-family: Arial, Helvetica;
-  line-height: 1.8;
-  overflow-y: scroll;
-  flex-grow:1;
-}
-
 .app-header .navBar{
+  display: block;
   position: absolute;
   right: 60px;
   height: 64px;
-}
-
-.app-header .navBar a:hover{
-  color:#536DFE;
-}
-
-.app-header .navBar .fa{
-  padding-right: 5px;
 }
 
 .app-header li{
   display: inline-block;
 }
 
-.app-header li a{
+.app-header .navBar a{
   display: block;
   color:#727272;
   width: 130px;
@@ -116,9 +116,31 @@ a.hamburger i {
   text-transform: uppercase;
 }
 
-.app-header li a.active{
+
+.app-header .navBar a:hover{
+  color:#536DFE;
+}
+
+.app-header .navBar .fa{
+  padding-right: 5px;
+}
+
+.app-header .navBar a.active{
   border-bottom: 4px solid #ff4081;
 }
+
+@media(min-width: 768px){
+  .hamburger{
+    display: none;
+  }
+  .app-header{
+    background-color: #fff;
+  }
+  .app-header .navBar{
+    display: none;
+  }
+}
+
 
 .home{
   background: url("../images/home-bg.jpg") no-repeat fixed center center/cover;
