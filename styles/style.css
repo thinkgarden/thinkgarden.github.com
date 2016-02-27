@@ -389,7 +389,7 @@ a.hamburger i {
   color:#fff;
 }
 
-.post-content {
+.post-page .post-content {
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -413,7 +413,6 @@ a.hamburger i {
   margin-bottom: 33px;
   margin-left: 0;
 }
-
 
 .post-content p {
   color: #777777;
