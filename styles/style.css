@@ -458,6 +458,9 @@ a.hamburger i {
   opacity: 0;
   transition:all 0.3s;
 }
+.post-content .cd-top:hover{
+  color: #fff;
+}
 .post-content .cd-top i{
   font-size: 18px;
   font-weight: 500;
