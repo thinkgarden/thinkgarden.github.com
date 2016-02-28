@@ -320,7 +320,7 @@ a.hamburger i {
 .work .card:hover {
   cursor: pointer;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.24);
-  transform: scale(1.05);
+  /*transform: scale(1.05);*/
 }
 
 .work .card img {
@@ -333,6 +333,10 @@ a.hamburger i {
   margin-top: 15px;
   margin-bottom: 15px;
   word-wrap: break-word;
+}
+
+.work .card a{
+  color: #777777;
 }
 
 @media (min-width: 1000px){
@@ -448,7 +452,6 @@ a.hamburger i {
   color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  text-indent: 100%;
   white-space: nowrap;
   background: #00bcd4;
   visibility:hidden;
@@ -459,10 +462,11 @@ a.hamburger i {
   font-size: 18px;
   font-weight: 500;
 }
-.post-content .cd-top.cd-fade-out {
-  opacity: .5;
-}
+
 .post-content .cd-top.cd-is-visible {
   visibility: visible;
   opacity: 1;
+}
+.post-content .cd-top.cd-is-visible.cd-fade-out {
+  opacity: .5;
 }
