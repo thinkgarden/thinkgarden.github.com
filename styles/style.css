@@ -476,9 +476,10 @@ a.hamburger i {
 }
 
 body.life{
-  color:#888;
-  font-size: small;
+  color:#727272;
+  font-size: 13px;
   background: white;
+  font-family: 'merriweathersans-light', Helvetica, Arial, sans-serif;
 }
 
 #books{
@@ -502,14 +503,14 @@ body.life{
 
 @media(min-width: 700px){
   #books{
-    width:690px;
+    width:618px;
     padding: 0;
     margin: 50px auto;
   }
   #books .word_card{
     float: left;
-    width: 277px;
-    margin-left:16px;
+    width: 288px;
+    margin-left:21px;
   }
 }
 
