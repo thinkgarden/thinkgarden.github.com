@@ -474,3 +474,42 @@ a.hamburger i {
 .post-content .cd-top.cd-is-visible.cd-fade-out {
   opacity: .5;
 }
+
+body.life{
+  color:#888;
+  font-size: small;
+  background: white;
+}
+
+#books{
+  width:90%;
+  margin:18px auto;
+}
+
+#books .word_card{
+  min-height: 216px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 16px;
+  padding:13px 19px 12px 19px;
+}
+
+#books .word_card p{
+  padding-bottom: 13px;
+  line-height: 1.6;
+}
+
+@media(min-width: 700px){
+  #books{
+    width:690px;
+    padding: 0;
+    margin: 50px auto;
+  }
+  #books .word_card{
+    float: left;
+    width: 277px;
+    margin-left:16px;
+  }
+}
+
