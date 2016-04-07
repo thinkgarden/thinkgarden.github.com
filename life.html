@@ -74,10 +74,10 @@ permalink: /life
         }else{
           var minH=Math.min.apply(null,itemHArr);
           var minHIndex=getminHIndex(itemHArr,minH);
-            oItem[i].style.top=(minH+16)+'px';
-            oItem[i].style.left=(oItem[minHIndex].offsetLeft+16)+'px';
+            oItem[i].style.top=(minH)+'px';
+            oItem[i].style.left=(oItem[minHIndex].offsetLeft)+'px';
             //数组 最小高元素的高 + 添加上的aPin[i]块框高
-            oItem[minHIndex]+=oItem[i].offsetHeight;//更新添加了块框后的列高
+            itemHArr[minHIndex]+=oItem[i].offsetHeight;//更新添加了块框后的列高
         }
       }
     }
