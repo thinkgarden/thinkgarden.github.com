@@ -103,20 +103,23 @@ permalink: /life
 
     window.addEventListener("load",function() {
       setTimeout(function(){
-        init(words);
-        var w =document.documentElement.clientWidth||document.body.clientWidth;
-         if(w > 624) {
-          waterfall('books','word_card');
-        }
         document.body.className = "life";
+        init(words);
+        checkWaterfall();
       }, 0);
     });
 
-    window.addEventListener("resize",function() {
+    function checkWaterfall(){
       var w =document.documentElement.clientWidth||document.body.clientWidth;//注意解决兼容性
       if(w > 624) {
         waterfall('books','word_card');
+      } else{
+        $("#books .word_card").css({'position':'relative','margin-bottom':'16px'});
       }
+    }
+
+    window.addEventListener("resize",function() {
+      checkWaterfall();
     });
 
   </script>
