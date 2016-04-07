@@ -68,14 +68,14 @@ permalink: /life
             if(i==0){
               oItem[i].style.left=0 + 'px';
             } else{
-              oItem[i].style.left=(i*288 + 16) + 'px';
+              oItem[i].style.left=(i*288 + 24) + 'px';
             }
             oItem[i].style.top= 0 + 'px';
         }else{
           var minH=Math.min.apply(null,itemHArr);
           var minHIndex=getminHIndex(itemHArr,minH);
             oItem[i].style.top=(minH)+'px';
-            oItem[i].style.left=(oItem[minHIndex].offsetLeft)+'px';
+            oItem[i].style.left=(oItem[minHIndex].offsetLeft + 16)+'px';
             //数组 最小高元素的高 + 添加上的aPin[i]块框高
             itemHArr[minHIndex]+=oItem[i].offsetHeight;//更新添加了块框后的列高
         }
