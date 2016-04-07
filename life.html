@@ -65,7 +65,11 @@ permalink: /life
         oItem[i].style.position='absolute';//设置绝对位移
         if(i<num){
             itemHArr[i]=itemH; //第一行中的num个块框pin 先添加进数组pinHArr
-            oItem[i].style.left=(i*288 + 16) + 'px';
+            if(i==0){
+              oItem[i].style.left=0 + 'px';
+            } else{
+              oItem[i].style.left=(i*288 + 16) + 'px';
+            }
             oItem[i].style.top= 0 + 'px';
         }else{
           var minH=Math.min.apply(null,itemHArr);
@@ -74,7 +78,6 @@ permalink: /life
             oItem[i].style.left=(oItem[minHIndex].offsetLeft+16)+'px';
             //数组 最小高元素的高 + 添加上的aPin[i]块框高
             oItem[minHIndex]+=oItem[i].offsetHeight;//更新添加了块框后的列高
-
         }
       }
     }
