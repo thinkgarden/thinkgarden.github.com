@@ -56,11 +56,64 @@ permalink: /life
       })
     }
 
+    function waterfall(parent,item){
+      var oParent = document.getElementById(parent);
+      var oItem = getClassObj(oParent,item);
+      var itemHArr=[],num=2;
+      for(var i=0; i<oItem.length; i++){
+        var itemH=oItem[i].offsetHeight;
+        oItem[i].style.position='absolute';//设置绝对位移
+        if(i<num){
+            itemHArr[i]=itemH; //第一行中的num个块框pin 先添加进数组pinHArr
+            oItem[i].style.left=(i*288 + 16) + 'px';
+            oItem[i].style.top= 0 + 'px';
+        }else{
+          var minH=Math.min.apply(null,itemHArr);
+          var minHIndex=getminHIndex(itemHArr,minH);
+            oItem[i].style.top=(minH+16)+'px';
+            oItem[i].style.left=(oItem[minHIndex].offsetLeft+16)+'px';
+            //数组 最小高元素的高 + 添加上的aPin[i]块框高
+            oItem[minHIndex]+=oItem[i].offsetHeight;//更新添加了块框后的列高
+
+        }
+      }
+    }
+
+    function getClassObj(parent, className){
+      var obj = parent.getElementsByTagName("*"); // 获取父级的所有子元素
+      var pinS = [];//创建一个数组用于收集子元素
+      for(var i=0;i<obj.length;i++){
+        if(obj[i].className == className){
+          pinS.push(obj[i]);
+        }
+      }
+      return pinS;
+    }
+
+    function getminHIndex(arr,minH){
+        for(var i in arr){
+            if(arr[i]==minH){
+                return i;
+            }
+        }
+    }
+
     window.addEventListener("load",function() {
       setTimeout(function(){
         init(words);
+        var w =document.documentElement.clientWidth||document.body.clientWidth;
+         if(w > 624) {
+          waterfall('books','word_card');
+        }
         document.body.className = "life";
       }, 0);
+    });
+
+    window.addEventListener("resize",function() {
+      var w =document.documentElement.clientWidth||document.body.clientWidth;//注意解决兼容性
+      if(w > 624) {
+        waterfall('books','word_card');
+      }
     });
 
   </script>

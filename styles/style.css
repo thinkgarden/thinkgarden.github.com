@@ -488,6 +488,7 @@ body.life{
 }
 
 #books .word_card{
+  width: 288px;
   min-height: 216px;
   background: #fff;
   border-radius: 10px;
@@ -501,17 +502,12 @@ body.life{
   line-height: 1.8;
 }
 
-@media(min-width: 700px){
+@media(min-width: 624px){
   #books{
     width:618px;
     padding: 0;
     margin: 50px auto;
     font-size: 14px;
-  }
-  #books .word_card{
-    float: left;
-    width: 288px;
-    margin-left:21px;
   }
 }
 
