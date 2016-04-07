@@ -77,7 +77,7 @@ permalink: /life
             oItem[i].style.top=(minH+16)+'px';
             oItem[i].style.left=(oItem[minHIndex].offsetLeft)+'px';
             //数组 最小高元素的高 + 添加上的aPin[i]块框高
-            itemHArr[minHIndex]+=oItem[i].offsetHeight;//更新添加了块框后的列高
+            itemHArr[minHIndex]+=oItem[i].offsetHeight + 16;//更新添加了块框后的列高
         }
       }
     }
@@ -114,7 +114,7 @@ permalink: /life
       if(w > 624) {
         waterfall('books','word_card');
       } else{
-        $("#books .word_card").css({'position':'relative','margin-bottom':'16px','left':'0'});
+        $("#books .word_card").css({'position':'relative','margin-bottom':'16px','left':'0','top':'0'});
       }
     }
 
