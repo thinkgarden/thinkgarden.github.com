@@ -162,7 +162,7 @@ a.hamburger i {
 }
 
 .home{
-  background: url("../images/home-bg.jpg") no-repeat fixed center center/cover;
+  background: url("http://7xnaen.com1.z0.glb.clouddn.com/home-bg.jpg") no-repeat fixed center center/cover;
   height: calc(100vh - 64px);
 }
 
@@ -356,6 +356,12 @@ a.hamburger i {
   }
 }
 
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .blog{
   width: 100%;
 }
@@ -383,10 +389,9 @@ a.hamburger i {
   width: 100%;
 }
 .post-page .post-hero{
-  background-color: #00bcd4;
+  background-color: #000;
   text-align: center;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding: 70px 0;
   margin-bottom: 30px;
 }
 
