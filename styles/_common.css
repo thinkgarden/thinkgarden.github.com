@@ -53,7 +53,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   font: 16px/1.8 'Helvetica Neue', 'Microsoft YaHei', Arial, 'Hiragino Sans GB', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
-  color:$primary-color-text;
 }
 
 .container {
