@@ -153,6 +153,8 @@ align-items - 控制着箭头本身应该放在容器的什么位置。
 
 align-self 可以对 Flex 容器中某个指定的元素的赋与不同的 align-item 值。
 
+设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
+
 
 ### flexbox 学习资源
 [https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
