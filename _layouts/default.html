@@ -67,6 +67,9 @@
     });
 
 		window.addEventListener("load",function() {
+			if(navigator.userAgent.match(/MicroMessenger/i)){
+				$('body').prepend('<div style=" overflow:hidden; width:0px; height:0; margin:0 auto; position:absolute; top:-800px;"><img src="/images/wxshare.png"></div>');
+			};
 		  // Set a timeout...
 		  setTimeout(function(){
 		    // Hide the address bar!

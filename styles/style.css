@@ -308,7 +308,6 @@ a.hamburger i {
 .work .card{
   display: block;
   width: 100%;
-  padding: 10px;
   margin: 20px 0;
   background-color: #FFF;
   text-align: center;
@@ -326,10 +325,10 @@ a.hamburger i {
 .work .card img {
   max-width: 100%;
   margin: 0 auto;
-  border: 1px solid #eee;
 }
 
 .work .card .text {
+  padding: 0 16px;
   margin-top: 15px;
   margin-bottom: 15px;
   word-wrap: break-word;
