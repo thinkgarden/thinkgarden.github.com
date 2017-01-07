@@ -164,9 +164,9 @@ a {
   .hide-for-small-only {
     display: none !important; } }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .show-for-small-only {
-    display: none !important; } }
+    display: block !important; } }
 
 .row {
   display: -ms-flexbox;
