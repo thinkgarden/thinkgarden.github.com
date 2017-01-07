@@ -160,12 +160,20 @@ a {
   text-decoration: none;
   color: #333; }
 
+@media (max-width: 768px) {
+  .hide-for-small-only {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .show-for-small-only {
+    display: none; } }
+
 .row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  height: 100%;
+  min-height: 100%;
   max-width: 1200px; }
 
 .column {
@@ -225,6 +233,56 @@ a {
       background-color: #35C8E6;
       color: #fefefe; }
 
+.mobile-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none; }
+  .mobile-nav a {
+    display: block;
+    padding: 0.7rem 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.2s ease;
+    line-height: 1; }
+    .mobile-nav a:hover {
+      color: white;
+      background-color: rgba(255, 255, 255, 0.2); }
+  .mobile-nav.show {
+    display: block; }
+
+a.hamburger {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  transition: background-color .5s;
+  cursor: pointer;
+  z-index: 2; }
+
+a.hamburger:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+a.hamburger i {
+  font-size: 20px;
+  color: white; }
+
+.ui-mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  display: none;
+  transition: all .5s; }
+
 .site-name {
   padding: 1rem; }
 
@@ -234,6 +292,9 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   color: #fff; }
+
+.blog h3 {
+  text-align: center; }
 
 .blog .post {
   width: 100%;
