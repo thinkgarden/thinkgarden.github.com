@@ -2,70 +2,44 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>To be a 手艺人</title>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>Wells</title>
+  <link rel="stylesheet" type="text/css" href="/css/app.css">
   <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
   <link rel="shortcut icon" href="/images/favicon.ico">
 </head>
-<body>
-
-<div class="app-container">
-    <a href="#" class="hamburger"><i class="fa fa-bars"></i></a>
-    <div class="sidebar">
-      <a class="title" href="/index">To be a Artisan</a>
-      <ul>
-        <li><a href="/index">首页</a></li>
-        <li><a href="/blog">博客</a></li>
-        <li><a href="/work">工作</a></li>
-        <li><a href="/life">文字</a></li>
-        <li><a href="/about">关于</a></li>
-      </ul>
-    </div>
-    <div class="ui-mask"></div>
-    <div class="app-header">
-      <ul class="navBar">
-        <li><a href="/index"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="/blog"><i class="fa fa-book"></i>Blog</a></li>
-        <li><a href="/work"><i class="fa fa-diamond"></i>Work</a></li>
-        <li><a href="/life"><i class="fa fa-inbox"></i>Life</a></li>
-        <li><a href="/about"><i class="fa fa-user"></i>Me</a></li>
-      </ul>
-    </div>
-    <div class="post-page">
-      <div class="post-hero bg-image" style="background-image: url(http://7xnaen.com1.z0.glb.clouddn.com/blog-header.jpg);">
-        <div class="title">{{ page.title }}</div>
-        <div class="date">{{ page.date | date: "%Y年%m月%d日" }}</div>
+<body class="">
+  <div class="row">
+    <div class="column sidebar">
+      <div class="siderbar-top">
+        <h3 class="site-name">Wells</h3>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
       </div>
-      <div class="post-content container">
-        {{ content }}
-        <div class="bdsharebuttonbox mt20"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
-       <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-        <div class="post-area post comment">
-          <!-- 多说评论框 start -->
-          <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="thinkgarden.github.io{{ page.url }}"></div>
-          <!-- 多说评论框 end -->
-        </div>
-        <a href="#0" class="cd-top"><i class="fa fa-chevron-up"></i></a>
+      <p class="secondary">A Font-end developer</p>
+    </div>
+    <div class="column main-content">
+      <div class="post-page">
+          <div class="post-hero bg-image" style="background-image: url(http://7xnaen.com1.z0.glb.clouddn.com/blog-header.jpg);">
+            <div class="title">{{ page.title }}</div>
+            <div class="date">{{ page.date | date: "%Y年%m月%d日" }}</div>
+          </div>
+          <div class="post-content container">
+            {{ content }}
+            <a href="#0" class="cd-top"><i class="fa fa-chevron-up"></i></a>
+          </div>
       </div>
     </div>
-</div>
-<script src="/js/jquery-1.11.1.min.js"></script>
+  </div>
+  <script src="/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
-    $('.hamburger').click(function(){
-      $('body').css('overflow', 'hidden');
-      $('.sidebar').addClass('show');
-      $('.ui-mask').addClass('show');
-    });
-
-    $('.ui-mask').click(function(){
-      $('body').css('overflow', 'auto');
-      $('.sidebar').removeClass('show');
-      $(this).removeClass('show');
-    });
     var offset = 300,
     //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
     offset_opacity = 1200,
@@ -95,14 +69,6 @@
         window.scrollTo(0, 1);
       }, 0);
     });
-    var duoshuoQuery = {short_name:"slowfish"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
