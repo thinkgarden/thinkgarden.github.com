@@ -1,23 +1,15 @@
 var gulp = require('gulp');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var atImport = require('postcss-import');
-var mqpacker = require('css-mqpacker');
-var cssnano = require('cssnano');
+var plugins = require('gulp-load-plugins');
 
+var $ = plugins();
 
 gulp.task('css', function () {
-  var processors = [
-    atImport,
-    require('postcss-simple-vars')({ silent: true }),
-    require('postcss-nested') ,
-    autoprefixer,
-    mqpacker,
-    cssnano
-  ];
-  return gulp.src('./styles/style.css')
-    .pipe(postcss(processors))
-    .pipe(gulp.dest('css'));
+  return gulp.src('./styles/app.scss')
+    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: ["last 2 versions","ie >= 9"]
+    }))
+    .pipe(gulp.dest('css'))
 });
 
 
