@@ -164,7 +164,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  height: 100%;
+  max-width: 1200px; }
 
 .column {
   padding: 0 16px; }
@@ -224,7 +226,7 @@ a {
       color: #fefefe; }
 
 .site-name {
-  margin-top: 1rem; }
+  padding: 1rem; }
 
 .home-bg {
   background-image: url("../images/TheSea.jpg");
@@ -249,7 +251,6 @@ a {
   text-align: center; }
 
 .about {
-  margin-top: 48px;
   margin-bottom: 30px; }
 
 .about h2, .about .hobby, .about .email, .about .weixin, .about .social {
@@ -283,6 +284,7 @@ a {
   display: inline-block;
   width: 40px;
   height: 40px;
+  padding: 0;
   line-height: 40px;
   border-radius: 50%;
   text-align: center;
@@ -298,23 +300,6 @@ a {
   font-size: 16px;
   color: #fff;
   line-height: 40px; }
-
-@media (min-width: 768px) {
-  .about {
-    text-align: center;
-    font-size: 17px; }
-  .about .avatar {
-    width: 150px;
-    height: 150px;
-    margin-top: -5px; }
-  .about h2 {
-    margin: 35px auto;
-    padding-left: 0;
-    padding-bottom: 10px;
-    width: 100px;
-    font-size: 24px;
-    border-left: none;
-    border-bottom: 5px solid #00bcd4; } }
 
 .work {
   margin: 0 auto;
