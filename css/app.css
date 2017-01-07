@@ -1,4 +1,3 @@
-@import url(normalize.css);
 .button {
   display: inline-block;
   text-align: center;
@@ -33,8 +32,11 @@
     .button.cta.hollow {
       text-transform: none;
       background: transparent;
-      border: 1px solid #14B1D1;
-      color: #14B1D1; }
+      border: 1px solid #fff;
+      color: #fff; }
+      .button.cta.hollow:hover {
+        background: #fff;
+        color: #212121; }
 
 pre {
   word-wrap: break-word;
@@ -184,7 +186,8 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.16); }
+  background: rgba(0, 0, 0, 0.26);
+  z-index: -1; }
 
 .sidebar {
   -ms-flex: 0 0 180px;
@@ -221,7 +224,8 @@ a {
   background-image: url("../images/TheSea.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  color: #fff; }
 
 .blog .post {
   width: 100%;
@@ -237,3 +241,6 @@ a {
 .blog a:hover {
   color: #14B1D1;
   text-decoration: underline; }
+
+.hero h5, .hero p {
+  text-align: center; }
