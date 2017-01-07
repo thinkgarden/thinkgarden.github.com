@@ -212,7 +212,7 @@ a {
 .main-content {
   -ms-flex: 1;
       flex: 1;
-  padding: 1rem 2rem; }
+  padding: 1rem; }
 
 .nav {
   margin: 0;
@@ -244,7 +244,7 @@ a {
   padding: 0;
   list-style: none;
   z-index: 98;
-  padding-top: 4em;
+  padding-top: 1em;
   padding-bottom: 2em;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -258,9 +258,12 @@ a {
   transition: all .2s ease;
   font-size: 1rem;
   display: none; }
+  .mobile-nav .site-name {
+    margin-bottom: 4rem; }
   .mobile-nav a {
     display: block;
     padding: 0.7rem 1rem;
+    text-align: center;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
     transition: color 0.2s ease;
@@ -279,7 +282,7 @@ a.hamburger {
   position: absolute;
   top: 2px;
   left: 12px;
-  display: block;
+  display: none;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -441,7 +444,19 @@ a.hamburger i {
   background-size: cover; }
 
 .post-page {
-  width: 100%; }
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem; }
+  .post-page h1 {
+    font-size: 30px; }
+  .post-page h2 {
+    font-size: 24px; }
+  .post-page h3 {
+    font-size: 20px; }
+  .post-page h4 {
+    font-size: 18px; }
+  .post-page h5 {
+    font-size: 16px; }
 
 .post-page .post-hero {
   background-color: #000;
