@@ -123,7 +123,8 @@ h6 {
 p {
   font-size: inherit;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
   text-rendering: optimizeLegibility; }
   p.small {
     font-size: 0.875rem; }
@@ -259,6 +260,8 @@ a {
   font-size: 1rem;
   display: none; }
   .mobile-nav .site-name {
+    padding: 0;
+    padding-left: 1rem;
     margin-bottom: 1rem;
     font-size: 28px;
     color: #fff;
@@ -283,7 +286,7 @@ a {
 a.hamburger {
   position: absolute;
   top: 2px;
-  left: 12px;
+  left: 0;
   display: none;
   width: 50px;
   height: 50px;
@@ -316,6 +319,7 @@ a.hamburger i {
   padding: 1rem; }
 
 .home-bg {
+  background-color: #000;
   background-image: url("../images/TheSea.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -370,6 +374,9 @@ a.hamburger i {
 
 .about .weixin {
   margin-bottom: 24px; }
+
+.about .social {
+  padding: 0; }
 
 .about .social li {
   display: inline-block;
@@ -462,21 +469,19 @@ a.hamburger i {
     font-size: 16px; }
 
 .post-page .post-hero {
-  background-color: #000;
-  text-align: center;
-  padding: 70px 0;
-  margin-bottom: 30px; }
+  padding: 32px 0; }
 
-.post-page .post-hero .title {
-  font-size: 1.8em;
-  color: #fff;
-  line-height: 1.1;
-  margin-bottom: 15px; }
+.post-page .post-title {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 3px; }
 
-.post-page .post-hero .date {
-  color: #fff; }
+.post-page .post-date {
+  font-size: 14px;
+  color: #999; }
 
 .post-content pre {
+  border-radius: 3px;
   background-color: #f0f0f0;
   display: block;
   font-size: 13px;
@@ -493,10 +498,11 @@ a.hamburger i {
   margin-left: 0; }
 
 .post-content p {
-  color: #777777;
-  font-weight: 400;
-  line-height: 1.95;
-  margin-bottom: 20px; }
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  font-weight: 300;
+  word-wrap: break-word;
+  word-break: normal; }
 
 .post-content img {
   width: 100%;
