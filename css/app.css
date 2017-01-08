@@ -213,7 +213,8 @@ a {
 .main-content {
   -ms-flex: 1;
       flex: 1;
-  padding: 1rem; }
+  padding: 1rem;
+  overflow: hidden; }
 
 .nav {
   margin: 0;
@@ -286,7 +287,7 @@ a {
 a.hamburger {
   position: absolute;
   top: 2px;
-  left: 0;
+  right: 0;
   display: none;
   width: 50px;
   height: 50px;
@@ -326,21 +327,24 @@ a.hamburger i {
   background-position: center;
   color: #fff; }
 
+.blog .posts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.blog .post-item:not(:first-child) {
+  padding-top: 20px; }
+
 .blog h3 {
   text-align: center;
   margin-top: 1rem; }
 
-.blog .post {
-  width: 100%;
-  padding-bottom: 0.5em; }
+.blog h5 {
+  margin-bottom: 4px; }
 
 .blog .datetime {
-  display: inline-block;
-  padding-right: 0.3em; }
-
-.blog a:hover {
-  color: #14B1D1;
-  text-decoration: underline; }
+  font-weight: 300;
+  font-size: 14px; }
 
 .hero h2, .hero h3, .hero h4, .hero h5, .hero p {
   text-align: center; }
