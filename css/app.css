@@ -297,6 +297,8 @@ a.hamburger {
   transition: background-color .5s;
   cursor: pointer;
   z-index: 2; }
+  a.hamburger.show {
+    display: block; }
 
 a.hamburger:hover {
   background-color: rgba(255, 255, 255, 0.3); }
@@ -315,6 +317,8 @@ a.hamburger i {
   position: fixed;
   display: none;
   transition: all .5s; }
+  .ui-mask.show {
+    display: block; }
 
 .site-name {
   padding: 1rem; }
@@ -327,24 +331,22 @@ a.hamburger i {
   background-position: center;
   color: #fff; }
 
-.blog .posts-list {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.blog .post-item:not(:first-child) {
-  padding-top: 20px; }
-
-.blog h3 {
-  text-align: center;
-  margin-top: 1rem; }
-
-.blog h5 {
-  margin-bottom: 4px; }
-
-.blog .datetime {
-  font-weight: 300;
-  font-size: 14px; }
+.blog {
+  padding: 2rem 1rem; }
+  .blog .posts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .blog .post-item:not(:first-child) {
+    padding-top: 20px; }
+  .blog h3 {
+    text-align: center;
+    margin-top: 1rem; }
+  .blog h5 {
+    margin-bottom: 4px; }
+  .blog .datetime {
+    font-weight: 300;
+    font-size: 14px; }
 
 .hero h2, .hero h3, .hero h4, .hero h5, .hero p {
   text-align: center; }
@@ -460,7 +462,7 @@ a.hamburger i {
 .post-page {
   max-width: 700px;
   margin: 0 auto;
-  padding: 2rem; }
+  padding: 2rem 1rem; }
   .post-page h1 {
     font-size: 30px; }
   .post-page h2 {
