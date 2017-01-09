@@ -27,7 +27,9 @@
       {{content}}
     </div>
   </div>
-  <a href="#" class="hamburger show-for-small-only"><i class="fa fa-bars"></i></a>
+  <a href="#" class="hamburger show-for-small-only">
+    <span></span> <span></span> <span></span> <span></span>
+  </a>
   <ul class="mobile-nav">
     <li class="site-name">Wells</li>
     <li><a href="/">Home</a></li>
@@ -50,15 +52,17 @@
     });
 
     $('.hamburger').click(function(){
-      $('body').css('overflow', 'hidden');
-      $('.mobile-nav').addClass('show');
-      $('.ui-mask').addClass('show');
-    });
-
-    $('.ui-mask').click(function(){
-      $('body').css('overflow', 'auto');
-      $('.mobile-nav').removeClass('show');
-      $(this).removeClass('show');
+      if(!$('.mobile-nav').hasClass('show')) {
+        $('body').css('overflow', 'hidden');
+        $(this).addClass('active');
+        $('.mobile-nav').addClass('show');
+        $('.ui-mask').addClass('show');
+      } else {
+        $('body').css('overflow', 'auto');
+        $('.mobile-nav').removeClass('show');
+        $('.ui-mask').removeClass('show');
+        $(this).removeClass('active');
+      }
     });
 
   </script>

@@ -237,8 +237,7 @@ a {
 
 .mobile-nav {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  left: 0;
   top: 0;
   right: 0;
   bottom: 0;
@@ -246,8 +245,7 @@ a {
   padding: 0;
   list-style: none;
   z-index: 98;
-  padding-top: 1em;
-  padding-bottom: 2em;
+  padding: 98px 0 0 0;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background-color: rgba(0, 0, 0, 0.9);
@@ -261,19 +259,25 @@ a {
   font-size: 1rem;
   display: none; }
   .mobile-nav .site-name {
+    position: absolute;
+    top: 22px;
+    left: 16px;
     padding: 0;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
     font-size: 28px;
     color: #fff;
     font-weight: 300; }
   .mobile-nav a {
     display: block;
-    padding: 0.7rem 1rem;
-    font-weight: 300;
+    margin: 0 auto;
+    width: 140px;
+    padding: 1rem 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
     color: rgba(255, 255, 255, 0.8);
     transition: color 0.2s ease;
-    line-height: 1; }
+    line-height: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18); }
     .mobile-nav a:hover {
       color: white;
       background-color: rgba(255, 255, 255, 0.3); }
@@ -286,37 +290,54 @@ a {
 
 a.hamburger {
   position: absolute;
-  top: 2px;
-  right: 0;
+  top: 16px;
+  right: 16px;
   display: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  line-height: 50px;
-  text-align: center;
-  transition: background-color .5s;
+  width: 22px;
+  height: 25px;
   cursor: pointer;
-  z-index: 2; }
+  z-index: 1; }
   a.hamburger.show {
-    display: block; }
-
-a.hamburger:hover {
-  background-color: rgba(255, 255, 255, 0.3); }
-
-a.hamburger i {
-  font-size: 20px;
-  color: #333; }
+    display: block !important; }
+  a.hamburger span {
+    display: block;
+    margin: 4px 0;
+    height: 3px;
+    background: #22222a;
+    transition: all 0.25s ease;
+    -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; }
+    a.hamburger span:nth-child(3) {
+      margin-top: -7px; }
+  a.hamburger.active {
+    display: block;
+    top: 24px;
+    z-index: 99; }
+    a.hamburger.active span {
+      background: white; }
+      a.hamburger.active span:nth-child(1) {
+        -ms-transform: scale(0) translateY(7px);
+            transform: scale(0) translateY(7px); }
+      a.hamburger.active span:nth-child(2) {
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+      a.hamburger.active span:nth-child(3) {
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+      a.hamburger.active span:nth-child(4) {
+        -ms-transform: scale(0) translateY(7px);
+            transform: scale(0) translateY(7px); }
 
 .ui-mask {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 2;
-  position: fixed;
+  height: 100%;
   display: none;
-  transition: all .5s; }
+  transition: all .5s;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5); }
   .ui-mask.show {
     display: block; }
 
@@ -344,9 +365,18 @@ a.hamburger i {
     margin-top: 1rem; }
   .blog h5 {
     margin-bottom: 4px; }
-  .blog .datetime {
-    font-weight: 300;
-    font-size: 14px; }
+  .blog .post-meta {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.01rem;
+    line-height: 2.2rem;
+    color: #9EABB3;
+    white-space: nowrap; }
+    .blog .post-meta span:last-child {
+      margin-left: 8px;
+      padding-left: 12px;
+      border-left: #d5dbde 1px solid;
+      text-transform: uppercase; }
 
 .hero h2, .hero h3, .hero h4, .hero h5, .hero p {
   text-align: center; }
@@ -411,17 +441,18 @@ a.hamburger i {
 
 .work .card {
   display: block;
-  width: 100%;
-  margin: 20px 0;
+  padding: 20px 18px;
+  margin-bottom: 2rem;
   background-color: #FFF;
   text-align: center;
   border-radius: 5px;
   transition: all 450ms ease;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05); }
+  .work .card:first-child {
+    margin-top: 2rem; }
 
 .work .card:hover {
   cursor: pointer;
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.24);
   /*transform: scale(1.05);*/ }
 
 .work .card img {
@@ -462,29 +493,54 @@ a.hamburger i {
 .post-page {
   max-width: 700px;
   margin: 0 auto;
-  padding: 2rem 1rem; }
+  padding: 2rem 0rem; }
   .post-page h1 {
     font-size: 30px; }
+    @media (max-width: 768px) {
+      .post-page h1 {
+        font-size: 24px; } }
   .post-page h2 {
     font-size: 24px; }
+    @media (max-width: 768px) {
+      .post-page h2 {
+        font-size: 18px; } }
   .post-page h3 {
     font-size: 20px; }
+    @media (max-width: 768px) {
+      .post-page h3 {
+        font-size: 16px; } }
   .post-page h4 {
     font-size: 18px; }
+    @media (max-width: 768px) {
+      .post-page h4 {
+        font-size: 16px; } }
   .post-page h5 {
     font-size: 16px; }
 
 .post-page .post-hero {
-  padding: 32px 0; }
+  padding-bottom: 10px; }
+  @media (max-width: 768px) {
+    .post-page .post-hero {
+      border-bottom: 1px solid #bdbdbd; } }
 
 .post-page .post-title {
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 3px; }
+  @media (max-width: 768px) {
+    .post-page .post-title {
+      font-size: 18px;
+      font-weight: 400; } }
 
 .post-page .post-date {
   font-size: 14px;
-  color: #999; }
+  color: #777e83; }
+  @media (max-width: 768px) {
+    .post-page .post-date {
+      font-size: 13px; } }
+
+.post-page .post-content {
+  padding-top: 18px; }
 
 .post-content pre {
   border-radius: 3px;
@@ -504,8 +560,9 @@ a.hamburger i {
   margin-left: 0; }
 
 .post-content p {
+  color: #44484b;
   margin-bottom: 1rem;
-  line-height: 1.75;
+  line-height: 1.5;
   font-weight: 300;
   word-wrap: break-word;
   word-break: normal; }

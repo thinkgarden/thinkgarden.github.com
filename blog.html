@@ -6,7 +6,13 @@ permalink: /blog
 <section class="blog">
 <ul class="posts-list">
 {% for post in site.posts %}
-<li class="post-item"><a href="{{ post.url }}" target="_self"> <h5>{{ post.title }}</h5>  <span class="datetime">{{ post.date | date:'%m月%d日' }}</span></a></li>
+<li class="post-item"><a href="{{ post.url }}" target="_self">
+  <h5>{{ post.title }}</h5>
+  <div class="post-meta">
+  <span class="">{{ post.date | date:'%d %B %Y' }}</span>
+  <span class="">{{ post.category }}</span>
+  </div>
+</a></li>
 {% endfor %}
 </ul>
 </section>
