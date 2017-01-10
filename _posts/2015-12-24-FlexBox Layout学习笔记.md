@@ -87,7 +87,7 @@ CSS
 
 ### flex container常用属性
 
-#### 定义容器的display属性
+定义容器的display属性
 
     .box{
         display: -webkit-flex; /*webkit*/
